@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scala Development Services - Leanweave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scala-services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <div class="leanweave_logo">
+                <a href="leanweve_home_page.html" class="logo">
+                    <img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+                </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+                        <div class="mega-menu" id="techStackMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="frontend">Front-end</a>
+                                    <a href="#" class="category-item" data-category="backend">Back-end</a>
+                                    <a href="#" class="category-item" data-category="mobile">Mobile</a>
+                                </div>
+                                
+                                <!-- Front-end Technologies -->
+                                <div class="category-content active" id="frontend">
+                                    <div class="content-header">
+                                        <h2>Front-end Development</h2>
+                                        <p>Create stunning user interfaces with modern front-end technologies</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="frontend-services.html" class="tech-card">
+                                            <h3>Front-end Development</h3>
+                                            <p>Leanweave crafts sleek, high-performance interfaces that make your brand stand out and your users stay engaged.</p>
+                                        </a>
+                                        <a href="angular-services.html" class="tech-card">
+                                            <h3>Angular</h3>
+                                            <p>Delivering scalable, future-ready web applications with precision and adaptability.</p>
+                                        </a>
+                                        <a href="react-services.html" class="tech-card">
+                                            <h3>React</h3>
+                                            <p>Creating fast, dynamic, and resilient front-end solutions tailored to your vision.</p>
+                                        </a>
+                                        <a href="vue-services.html" class="tech-card">
+                                            <h3>Vue</h3>
+                                            <p>Building responsive, intuitive, and delightfully smooth user experiences.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Back-end Technologies -->
+                                <div class="category-content" id="backend">
+                                    <div class="content-header">
+                                        <h2>Back-end Development</h2>
+                                        <p>Robust server-side solutions with scalable architectures</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="backend-services.html" class="tech-card">
+                                            <h3>Back-end Development</h3>
+                                            <p>Leanweave's expert engineers design secure, scalable, and high-performance systems that power your business from the inside out.</p>
+                                        </a>
+                                        <a href="java-services.html" class="tech-card">
+                                            <h3>Java</h3>
+                                            <p>Developing enterprise-grade applications built for stability and longevity.</p>
+                                        </a>
+                                        <a href="dotnet-services.html" class="tech-card">
+                                            <h3>.NET</h3>
+                                            <p>Delivering seamless, reliable, and future-ready solutions with .NET expertise.</p>
+                                        </a>
+                                        <a href="php-services.html" class="tech-card">
+                                            <h3>PHP</h3>
+                                            <p>Creating dynamic, versatile, and business-focused web applications.</p>
+                                        </a>
+                                        <a href="python-services.html" class="tech-card">
+                                            <h3>Python</h3>
+                                            <p>Driving innovation through Python's adaptability and robust ecosystem.</p>
+                                        </a>
+                                        <a href="nodejs-services.html" class="tech-card">
+                                            <h3>Node.js</h3>
+                                            <p>Building lightning-fast, scalable, and real-time applications with Node.js.</p>
+                                        </a>
+                                        <a href="ruby-services.html" class="tech-card">
+                                            <h3>Ruby</h3>
+                                            <p>Crafting elegant, efficient, and maintainable back-end solutions.</p>
+                                        </a>
+                                        <a href="golang-services.html" class="tech-card">
+                                            <h3>Golang</h3>
+                                            <p>Engineering high-performance systems with speed and precision.</p>
+                                        </a>
+                                        <a href="scala-services.html" class="tech-card">
+                                            <h3>Scala</h3>
+                                            <p>Developing scalable, functional, and future-proof applications.</p>
+                                        </a>
+                                        <a href="rust-services.html" class="tech-card">
+                                            <h3>Rust</h3>
+                                            <p>Ensuring unmatched safety, performance, and reliability.</p>
+                                        </a>
+                                        <div class="tech-card">
+                                            <h3>C/C++</h3>
+                                            <p>Delivering powerful, high-efficiency systems with C and C++.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Technologies -->
+                                <div class="category-content" id="mobile">
+                                    <div class="content-header">
+                                        <h2>Mobile Development</h2>
+                                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Designing native, cross-platform, and progressive apps that deliver flawless performance everywhere.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Android</h3>
+                                            <p>Crafting seamless, user-focused Android experiences that inspire engagement.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>iOS</h3>
+                                            <p>Building sleek, high-performance iOS applications with precision and style.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>React Native</h3>
+                                            <p>Creating efficient, cross-platform apps with React Native's power and versatility.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Flutter</h3>
+                                            <p>Transforming app ideas into reality with Flutter's speed, flexibility, and elegance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">Scala</span><br>
+                    <span class="word">Development...</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Build powerful, scalable applications with Scala's functional programming excellence. 
+                    We deliver high-performance, concurrent systems and data-intensive applications that power 
+                    modern enterprises and drive digital transformation across industries.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn--secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="statistics-grid">
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years on Market</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18+</div>
+                <div class="stat-label">Scala Developers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">85+</div>
+                <div class="stat-label">Scala Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scala Development Services Section -->
+    <section id="services" class="scala-services-section">
+        <div class="container">
+            <div class="services-header">
+                <h2>Scala Development Services</h2>
+                <p>Comprehensive Scala development solutions tailored to your business needs. From functional programming to big data processing, we provide end-to-end Scala services.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Functional Programming</h3>
+                    <p>Leverage Scala's functional programming paradigms to build immutable, composable, and highly maintainable applications with advanced type safety.</p>
+                    <ul class="service-features">
+                        <li>Immutable data structures</li>
+                        <li>Higher-order functions</li>
+                        <li>Monadic compositions</li>
+                        <li>Type-safe programming</li>
+                        <li>Pattern matching</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Big Data Processing</h3>
+                    <p>Build scalable data processing pipelines using Scala with Apache Spark, handling massive datasets with distributed computing power.</p>
+                    <ul class="service-features">
+                        <li>Apache Spark development</li>
+                        <li>Real-time data streaming</li>
+                        <li>ETL pipeline creation</li>
+                        <li>Data lake architectures</li>
+                        <li>Machine learning workflows</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Reactive Systems</h3>
+                    <p>Develop highly concurrent, fault-tolerant reactive systems using Akka framework for resilient distributed applications.</p>
+                    <ul class="service-features">
+                        <li>Actor-based architecture</li>
+                        <li>Event sourcing patterns</li>
+                        <li>Reactive streams</li>
+                        <li>Clustering & sharding</li>
+                        <li>Fault tolerance design</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Microservices Architecture</h3>
+                    <p>Design and implement scalable microservices using Scala frameworks like Play Framework and Akka HTTP for enterprise solutions.</p>
+                    <ul class="service-features">
+                        <li>Play Framework services</li>
+                        <li>HTTP API development</li>
+                        <li>Service mesh integration</li>
+                        <li>Circuit breaker patterns</li>
+                        <li>Distributed tracing</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Scala Consulting & Migration</h3>
+                    <p>Expert guidance on Scala adoption, architecture design, and migration from legacy systems to modern Scala-based solutions.</p>
+                    <ul class="service-features">
+                        <li>Scala adoption strategy</li>
+                        <li>Legacy system migration</li>
+                        <li>Performance optimization</li>
+                        <li>Code quality assessment</li>
+                        <li>Team training & mentoring</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leanweave Scala Development Scope Section -->
+    <section id="scope" class="scope-section">
+        <div class="container">
+            <div class="scope-header">
+                <h2>Leanweave Scala Development Scope</h2>
+                <p>Comprehensive Scala services designed for modern enterprise and data-intensive applications. From functional programming to reactive systems and big data processing, we leverage Scala to deliver robust, high‑performance solutions.</p>
+            </div>
+
+            <div class="scope-tabs">
+                <button class="scope-tab active" data-tab="frameworks">Frameworks</button>
+                <button class="scope-tab" data-tab="bigdata">Big Data</button>
+                <button class="scope-tab" data-tab="reactive">Reactive</button>
+                <button class="scope-tab" data-tab="testing">Testing</button>
+                <button class="scope-tab" data-tab="tooling">Tooling</button>
+                <button class="scope-tab" data-tab="deployment">Deployment</button>
+            </div>
+
+            <div class="scope-content">
+                <!-- Frameworks Panel -->
+                <div id="frameworks" class="scope-panel active">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Scala Frameworks</h3>
+                                <p>Build robust applications with proven Scala frameworks optimized for performance, concurrency, and functional programming excellence.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Functional programming paradigms</li>
+                                    <li>Type-safe HTTP services</li>
+                                    <li>Actor-based concurrency</li>
+                                    <li>High-performance JSON handling</li>
+                                    <li>Reactive streaming</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playframework/playframework-original.svg" alt="Play Framework" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Play Framework</span>
+                                    </div>
+                                    <span>Play Framework</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka HTTP" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Akka HTTP</span>
+                                    </div>
+                                    <span>Akka HTTP</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Http4s" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Http4s</span>
+                                    </div>
+                                    <span>Http4s</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Finch" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Finch</span>
+                                    </div>
+                                    <span>Finch</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scalatra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Scalatra</span>
+                                    </div>
+                                    <span>Scalatra</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Sangria GraphQL" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Sangria GraphQL</span>
+                                    </div>
+                                    <span>Sangria GraphQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Big Data Panel -->
+                <div id="bigdata" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Big Data & Analytics</h3>
+                                <p>Process massive datasets with Scala's powerful big data ecosystem, delivering real-time analytics and data processing solutions.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Distributed data processing</li>
+                                    <li>Real-time stream processing</li>
+                                    <li>Machine learning pipelines</li>
+                                    <li>Data lake architectures</li>
+                                    <li>ETL & data transformations</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Spark" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Apache Spark</span>
+                                    </div>
+                                    <span>Apache Spark</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Kafka" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Apache Kafka</span>
+                                    </div>
+                                    <span>Apache Kafka</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Flink" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Apache Flink</span>
+                                    </div>
+                                    <span>Apache Flink</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg" alt="Cassandra" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Cassandra</span>
+                                    </div>
+                                    <span>Cassandra</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Elasticsearch</span>
+                                    </div>
+                                    <span>Elasticsearch</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Hadoop</span>
+                                    </div>
+                                    <span>Hadoop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reactive Panel -->
+                <div id="reactive" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Reactive Systems</h3>
+                                <p>Build resilient, responsive reactive systems with Scala's actor model and functional reactive programming capabilities.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Actor-based concurrency</li>
+                                    <li>Event sourcing & CQRS</li>
+                                    <li>Backpressure handling</li>
+                                    <li>Fault tolerance & supervision</li>
+                                    <li>Distributed systems patterns</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Akka</span>
+                                    </div>
+                                    <span>Akka</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka Cluster" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Akka Cluster</span>
+                                    </div>
+                                    <span>Akka Cluster</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka Streams" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Akka Streams</span>
+                                    </div>
+                                    <span>Akka Streams</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="FS2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">FS2</span>
+                                    </div>
+                                    <span>FS2</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Monix" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Monix</span>
+                                    </div>
+                                    <span>Monix</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ZIO" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">ZIO</span>
+                                    </div>
+                                    <span>ZIO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Panel -->
+                <div id="testing" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Testing & Quality</h3>
+                                <p>Ensure code quality with comprehensive testing frameworks designed for functional and object-oriented paradigms.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Property-based testing</li>
+                                    <li>Behavior-driven development</li>
+                                    <li>Mocking & test doubles</li>
+                                    <li>Performance testing</li>
+                                    <li>Integration testing</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ScalaTest" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">ScalaTest</span>
+                                    </div>
+                                    <span>ScalaTest</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Specs2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Specs2</span>
+                                    </div>
+                                    <span>Specs2</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ScalaCheck" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">ScalaCheck</span>
+                                    </div>
+                                    <span>ScalaCheck</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="uTest" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">uTest</span>
+                                    </div>
+                                    <span>uTest</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Testcontainers" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Testcontainers</span>
+                                    </div>
+                                    <span>Testcontainers</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Mockito Scala" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Mockito Scala</span>
+                                    </div>
+                                    <span>Mockito Scala</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tooling Panel -->
+                <div id="tooling" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Development Tools</h3>
+                                <p>Leverage modern Scala tooling for efficient development, dependency management, and code quality enforcement.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Interactive build tools</li>
+                                    <li>Code formatting & linting</li>
+                                    <li>Dependency management</li>
+                                    <li>IDE integration</li>
+                                    <li>Compile-time optimizations</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sbt/sbt-original.svg" alt="SBT" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">SBT</span>
+                                    </div>
+                                    <span>SBT</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Mill" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Mill</span>
+                                    </div>
+                                    <span>Mill</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scalafmt" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Scalafmt</span>
+                                    </div>
+                                    <span>Scalafmt</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scalafix" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Scalafix</span>
+                                    </div>
+                                    <span>Scalafix</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Metals LSP" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Metals LSP</span>
+                                    </div>
+                                    <span>Metals LSP</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Wartremover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Wartremover</span>
+                                    </div>
+                                    <span>Wartremover</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment Panel -->
+                <div id="deployment" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Deployment & Operations</h3>
+                                <p>Deploy and monitor Scala applications with containerization, cloud platforms, and observability tools.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Container orchestration</li>
+                                    <li>Cloud-native deployments</li>
+                                    <li>Metrics & monitoring</li>
+                                    <li>Distributed tracing</li>
+                                    <li>Performance profiling</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Docker</span>
+                                    </div>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Kubernetes</span>
+                                    </div>
+                                    <span>Kubernetes</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Prometheus</span>
+                                    </div>
+                                    <span>Prometheus</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Grafana</span>
+                                    </div>
+                                    <span>Grafana</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Jaeger" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">Jaeger</span>
+                                    </div>
+                                    <span>Jaeger</span>
+                                </div>
+                                <div class="tech-logo">
+                                    <div class="logo-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="GraalVM" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                        <span style="display: none;">GraalVM</span>
+                                    </div>
+                                    <span>GraalVM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leanweave's software expertise in Scala Section -->
+    <section class="techset">
+        <div class="container">
+            <div class="techset__header">
+                <h2>Leanweave's software expertise in Scala</h2>
+                <p>Leanweave engineers leverage modern Scala technologies, frameworks, and components to create high-performance, user-friendly solutions that drive innovation and accelerate business growth.</p>
+            </div>
+
+            <!-- <div class="techset__tabs" role="tablist">
+                <button class="techset__tab active" data-tech-panel="frameworks" role="tab" aria-selected="true">Frameworks</button>
+                <button class="techset__tab" data-tech-panel="bigdata" role="tab" aria-selected="false">Big Data</button>
+                <button class="techset__tab" data-tech-panel="reactive" role="tab" aria-selected="false">Reactive</button>
+                <button class="techset__tab" data-tech-panel="testing" role="tab" aria-selected="false">Testing</button>
+                <button class="techset__tab" data-tech-panel="tooling" role="tab" aria-selected="false">Tooling</button>
+                <button class="techset__tab" data-tech-panel="cloud" role="tab" aria-selected="false">Cloud</button>
+            </div> -->
+
+            <div class="techset__carousel">
+                <button class="techset__nav techset__nav--prev" aria-label="Previous">‹</button>
+                <div class="techset__track" id="techsetTrack">
+                    <!-- Frameworks -->
+                    <div class="techset__panel active" id="frameworks" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Ensime">
+                                <span>Ensime</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Lift">
+                                <span>Lift</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Partest">
+                                <span>Partest</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/play/play-original.svg" alt="Play">
+                                <span>Play</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sbt/sbt-original.svg" alt="SBT">
+                                <span>SBT</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Scala IDE">
+                                <span>Scala IDE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Big Data -->
+                    <div class="techset__panel" id="bigdata" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Spark">
+                                <span>Apache Spark</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Kafka">
+                                <span>Apache Kafka</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Flink">
+                                <span>Apache Flink</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg" alt="Cassandra">
+                                <span>Cassandra</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch">
+                                <span>Elasticsearch</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop">
+                                <span>Hadoop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reactive -->
+                    <div class="techset__panel" id="reactive" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka">
+                                <span>Akka</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Akka Streams">
+                                <span>Akka Streams</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Monix">
+                                <span>Monix</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="FS2">
+                                <span>FS2</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ZIO">
+                                <span>ZIO</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Cats Effect">
+                                <span>Cats Effect</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="techset__panel" id="testing" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ScalaTest">
+                                <span>ScalaTest</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Specs2">
+                                <span>Specs2</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="ScalaCheck">
+                                <span>ScalaCheck</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="uTest">
+                                <span>uTest</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Mockito Scala">
+                                <span>Mockito Scala</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Testcontainers">
+                                <span>Testcontainers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tooling -->
+                    <div class="techset__panel" id="tooling" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sbt/sbt-original.svg" alt="SBT">
+                                <span>SBT</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Mill">
+                                <span>Mill</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scalafmt">
+                                <span>Scalafmt</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scalafix">
+                                <span>Scalafix</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Metals LSP">
+                                <span>Metals LSP</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Scala IDE">
+                                <span>Scala IDE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="techset__panel" id="cloud" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                <span>Docker</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+                                <span>Kubernetes</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+                                <span>AWS</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Azure">
+                                <span>Azure</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP">
+                                <span>GCP</span>
+                            </div>
+                            <div class="techset__item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus">
+                                <span>Prometheus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="techset__nav techset__nav--next" aria-label="Next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Feedback Section -->
+    <section class="client-feedback">
+        <div class="feedback-header">
+            <h2>Client Feedback</h2>
+            <p>Leanweave transformed our vision into reality!</p>
+        </div>
+
+        <div class="feedback-slider">
+            <div class="feedback-track">
+                <div class="feedback-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The team's attention to detail is unmatched. They exceeded our expectations!"</p>
+                    <div class="client-meta">
+                        <img src="images/testimonial 1/avatar/alice.svg" alt="Alice Johnson">
+                        <div>
+                            <strong>Alice Johnson</strong>
+                            <span>Project Manager, TechCorp</span>
+                        </div>
+                        <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg" alt="Matha Hospital">
+                    </div>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Working with Leanweave was a game changer for us. Their expertise is evident in every aspect of the project!"</p>
+                    <div class="client-meta">
+                        <img src="images/testimonial 1/avatar/mark.svg" alt="Mark Smith">
+                        <div>
+                            <strong>Mark Smith</strong>
+                            <span>CEO, InnovateX</span>
+                        </div>
+                        <img class="company-logo" src="images/testimonial 1/logo/Ceph.svg" alt="Ceph">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+
+            <button class="slider-btn prev">←</button>
+            <button class="slider-btn next">→</button>
+        </div>
+    </section>
+
+
+    <!-- Client Logos Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h3>Trusted by leading companies</h3>
+            </div>
+            <div class="clients__logos">
+                <img src="logos/Trusted by leading companies logos/Ceph.svg" alt="Ceph Logo">
+                <img src="logos/Trusted by leading companies logos/Matha_Hospital.svg" alt="Matha Hospital Logo">
+                <img src="logos/Trusted by leading companies logos/Tata Steel.svg" alt="Tata Steel Logo">
+                <img src="logos/Trusted by leading companies logos/Nestle-Logo.svg" alt="Nestle Logo">
+                <img src="logos/Trusted by leading companies logos/pirelli-logo.svg" alt="Pirelli Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="main-footer">
+        <div class="main-footer_container">
+            <!-- CTA Section -->
+            <div class="footer__cta">
+                <div class="footer__cta-overlay">
+                    <h2>Get Your Free Scala Consultation Today</h2>
+                    <p>Ready to build powerful Scala applications? Our expert developers are here to help you succeed.</p>
+                    <div class="footer__cta-buttons">
+                        <a href="#" class="btn btn--primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links Grid -->
+            <div class="footer__content">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Tech Stack</h4>
+                        <ul class="footer__links">
+                            <li><a href="backend-services.html">Back-end</a></li>
+                            <li><a href="frontend-services.html">Front-end</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="java-services.html">Java</a></li>
+                            <li><a href="php-services.html">PHP</a></li>
+                            <li><a href="nodejs-services.html">Node.js</a></li>
+                            <li><a href="ruby-services.html">Ruby</a></li>
+                            <li><a href="react-services.html">React</a></li>
+                            <li><a href="python-services.html">Python</a></li>
+                            <li><a href="scala-services.html">Scala</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Industries We Serve</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Financial Services</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Logistics</a></li>
+                            <li><a href="#">Travel & Hospitality</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Media & Entertainment</a></li>
+                            <li><a href="#">Telecom</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">iGaming</a></li>
+                            <li><a href="#">Retail</a></li>
+                            <li><a href="#">Nonprofit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Our Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Quality Assurance</a></li>
+                            <li><a href="#">Staff Augmentation</a></li>
+                            <li><a href="#">Project Development Services</a></li>
+                            <li><a href="#">Dedicated Team</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">DevOps Services</a></li>
+                            <li><a href="#">Business Analysis</a></li>
+                            <li><a href="#">Solution Architecture</a></li>
+                            <li><a href="#">IoT Development Services</a></li>
+                            <li><a href="#">Startups & MVP Services</a></li>
+                            <li><a href="#">SaaS</a></li>
+                            <li><a href="#">Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">GTC</a></li>
+                            <li><a href="#">GTC for Consultancy services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <div class="footer__logo">
+                        <img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+                    </div>
+                    
+                    <div class="footer__nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <div class="copyright-links">
+                    <span>© 2025 Leanweave. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/logo-handler.js"></script>
+    <script src="scala-services.js"></script>
+    <script src="hero-animation.js"></script>
+    <script>
+        (function(){
+            const dots = document.querySelectorAll('.nav-dots .dot');
+            const arrows = document.querySelectorAll('.nav-arrows .nav-arrow');
+            if(!dots.length || !arrows.length) return;
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    dots.forEach(d => d.classList.remove('active'));
+                    dot.classList.add('active');
+                });
+            });
+            let currentIndex = 0;
+            arrows.forEach((arrow, index) => {
+                arrow.addEventListener('click', () => {
+                    if (index === 0) {
+                        currentIndex = currentIndex > 0 ? currentIndex - 1 : dots.length - 1;
+                    } else {
+                        currentIndex = currentIndex < dots.length - 1 ? currentIndex + 1 : 0;
+                    }
+                    dots.forEach(d => d.classList.remove('active'));
+                    dots[currentIndex].classList.add('active');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
+    

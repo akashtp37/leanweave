@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>C/C++ Development Services - Leanweave</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="c-cpp-services.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Header Navigation -->
+	<header class="main-header">
+		<div class="header-container">
+			<nav class="main-nav">
+				<div class="leanweave_logo">
+				<a href="leanweve_home_page.html" class="logo">
+					<img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+				</a>
+				</div>
+
+				<ul class="nav-menu" id="navMenu">
+					<li class="nav-item">
+						<a href="tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+						<div class="mega-menu" id="techStackMenu">
+							<button class="mega-close" onclick="closeMegaMenu()">×</button>
+							<div class="mega-container">
+								<div class="category-nav">
+									<a href="#" class="category-item active" data-category="frontend">Front-end</a>
+									<a href="#" class="category-item" data-category="backend">Back-end</a>
+									<a href="#" class="category-item" data-category="mobile">Mobile</a>
+								</div>
+
+								<!-- Front-end Technologies -->
+								<div class="category-content active" id="frontend">
+									<div class="content-header">
+										<h2>Front-end Development</h2>
+										<p>Create stunning user interfaces with modern front-end technologies</p>
+									</div>
+									<div class="content-grid">
+										<a href="frontend-services.html" class="tech-card">
+											<h3>Front-end Development</h3>
+											<p>Leanweave crafts sleek, high-performance interfaces that make your brand stand out and your users stay engaged.</p>
+										</a>
+										<a href="angular-services.html" class="tech-card">
+											<h3>Angular</h3>
+											<p>Delivering scalable, future-ready web applications with precision and adaptability.</p>
+										</a>
+										<a href="react-services.html" class="tech-card">
+											<h3>React</h3>
+											<p>Creating fast, dynamic, and resilient front-end solutions tailored to your vision.</p>
+										</a>
+										<a href="vue-services.html" class="tech-card">
+											<h3>Vue</h3>
+											<p>Building responsive, intuitive, and delightfully smooth user experiences.</p>
+										</a>
+									</div>
+								</div>
+
+								<!-- Back-end Technologies -->
+								<div class="category-content" id="backend">
+									<div class="content-header">
+										<h2>Back-end Development</h2>
+										<p>Robust server-side solutions with scalable architectures</p>
+									</div>
+									<div class="content-grid">
+										<a href="backend-services.html" class="tech-card">
+											<h3>Back-end Development</h3>
+											<p>Leanweave's expert engineers design secure, scalable, and high-performance systems that power your business from the inside out.</p>
+										</a>
+										<a href="java-services.html" class="tech-card">
+											<h3>Java</h3>
+											<p>Developing enterprise-grade applications built for stability and longevity.</p>
+										</a>
+										<a href="dotnet-services.html" class="tech-card">
+											<h3>.NET</h3>
+											<p>Delivering seamless, reliable, and future-ready solutions with .NET expertise.</p>
+										</a>
+										<a href="php-services.html" class="tech-card">
+											<h3>PHP</h3>
+											<p>Creating dynamic, versatile, and business-focused web applications.</p>
+										</a>
+										<a href="python-services.html" class="tech-card">
+											<h3>Python</h3>
+											<p>Driving innovation through Python's adaptability and robust ecosystem.</p>
+										</a>
+										<a href="nodejs-services.html" class="tech-card">
+											<h3>Node.js</h3>
+											<p>Building lightning-fast, scalable, and real-time applications with Node.js.</p>
+										</a>
+										<a href="ruby-services.html" class="tech-card">
+											<h3>Ruby</h3>
+											<p>Crafting elegant, efficient, and maintainable back-end solutions.</p>
+										</a>
+										<a href="golang-services.html" class="tech-card">
+											<h3>Golang</h3>
+											<p>Engineering high-performance systems with speed and precision.</p>
+										</a>
+										<a href="scala-services.html" class="tech-card">
+											<h3>Scala</h3>
+											<p>Developing scalable, functional, and future-proof applications.</p>
+										</a>
+										<a href="rust-services.html" class="tech-card">
+											<h3>Rust</h3>
+											<p>Ensuring unmatched safety, performance, and reliability.</p>
+										</a>
+										<a href="c-cpp-services.html" class="tech-card">
+											<h3>C/C++</h3>
+											<p>Delivering powerful, high-efficiency systems with C and C++.</p>
+										</a>
+									</div>
+								</div>
+
+								<!-- Mobile Technologies -->
+								<div class="category-content" id="mobile">
+									<div class="content-header">
+										<h2>Mobile Development</h2>
+										<p>Native and cross-platform mobile applications for iOS and Android</p>
+									</div>
+									<div class="content-grid">
+										<div class="tech-card">
+											<h3>Mobile Development</h3>
+											<p>Designing native, cross-platform, and progressive apps that deliver flawless performance everywhere.</p>
+										</div>
+										<div class="tech-card">
+											<h3>Android</h3>
+											<p>Crafting seamless, user-focused Android experiences that inspire engagement.</p>
+										</div>
+										<div class="tech-card">
+											<h3>iOS</h3>
+											<p>Building sleek, high-performance iOS applications with precision and style.</p>
+										</div>
+										<div class="tech-card">
+											<h3>React Native</h3>
+											<p>Creating efficient, cross-platform apps with React Native's power and versatility.</p>
+										</div>
+										<div class="tech-card">
+											<h3>Flutter</h3>
+											<p>Transforming app ideas into reality with Flutter's speed, flexibility, and elegance.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+				</ul>
+
+				<div class="mobile-toggle" id="mobileToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					<span class="word">C/C++</span><br>
+					<span class="word">Development...</span>
+				</h1>
+				<p class="hero-subtitle">
+					Engineer ultra-fast, resource-efficient software with C and C++. From systems programming and embedded firmware to cross-platform applications, we deliver performance, reliability, and control at scale.
+				</p>
+				<div class="hero-buttons">
+					<a href="#contact" class="btn--secondary">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Statistics Section -->
+	<section class="statistics-section">
+		<div class="statistics-grid">
+			<div class="stat-card">
+				<div class="stat-number">10+</div>
+				<div class="stat-label">Years on Market</div>
+			</div>
+			<div class="stat-card">
+				<div class="stat-number">25+</div>
+				<div class="stat-label">C/C++ Engineers</div>
+			</div>
+			<div class="stat-card">
+				<div class="stat-number">120+</div>
+				<div class="stat-label">C/C++ Projects</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- C/C++ Development Services Section -->
+	<section id="services" class="ccpp-services-section">
+		<div class="container">
+			<div class="services-header">
+				<h2>C/C++ Development Services</h2>
+				<p>End-to-end C and C++ engineering—from low-level system modules and embedded firmware to cross-platform desktop apps and performance-critical backends. Built for speed, reliability, and longevity.</p>
+			</div>
+
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>Systems Programming</h3>
+					<p>Develop robust, high-efficiency system components with direct hardware access, predictable performance, and precise memory control.</p>
+					<ul class="service-features">
+						<li>OS components, drivers, and tooling</li>
+						<li>High-performance services and daemons</li>
+						<li>Multithreading, SIMD, and concurrency</li>
+						<li>POSIX/Win32 APIs and kernel interfaces</li>
+						<li>Low-latency I/O and networking</li>
+					</ul>
+					<button class="service-btn">Learn More</button>
+				</div>
+
+				<div class="service-card">
+					<h3>Embedded & IoT</h3>
+					<p>Design reliable firmware and real-time applications for constrained devices with safety, determinism, and power efficiency.</p>
+					<ul class="service-features">
+						<li>Bare-metal and RTOS development</li>
+						<li>MCUs: ARM Cortex, AVR, ESP32, RISC‑V</li>
+						<li>Board bring-up, bootloaders, BSPs</li>
+						<li>Device drivers and peripheral stacks</li>
+						<li>Connectivity: BLE, Wi‑Fi, LoRa, CAN</li>
+					</ul>
+					<button class="service-btn">Learn More</button>
+				</div>
+
+				<div class="service-card">
+					<h3>Cross‑platform Applications</h3>
+					<p>Build native desktop and tooling with consistent UX across Windows, Linux, and macOS using modern C++ frameworks.</p>
+					<ul class="service-features">
+						<li>Qt, wxWidgets, JUCE</li>
+						<li>Native UI and GPU acceleration</li>
+						<li>Packaging and installers</li>
+						<li>Plugin architectures and SDKs</li>
+						<li>Automated CI/CD for multi-OS</li>
+					</ul>
+					<button class="service-btn">Learn More</button>
+				</div>
+
+				<div class="service-card">
+					<h3>Performance Optimization</h3>
+					<p>Unlock significant speedups by profiling, tuning, and rewriting hot paths in C/C++ with a focus on memory, CPU, and I/O.</p>
+					<ul class="service-features">
+						<li>Algorithmic and data‑structure tuning</li>
+						<li>Vectorization and cache optimization</li>
+						<li>Lock‑free and parallel patterns</li>
+						<li>FFI, ABI, and interop bridges</li>
+						<li>Profiling: perf, VTune, Instruments</li>
+					</ul>
+					<button class="service-btn">Learn More</button>
+				</div>
+
+				<div class="service-card">
+					<h3>Modernization & Interoperability</h3>
+					<p>Evolve legacy C/C++ codebases safely: apply modern C++ standards, improve architecture, and integrate with other languages.</p>
+					<ul class="service-features">
+						<li>Refactoring to C++20/23 best practices</li>
+						<li>Memory safety audits and sanitizers</li>
+						<li>Bindings: Python, Rust, Java, .NET</li>
+						<li>Build system migrations (Make → CMake)</li>
+						<li>Containerization and deployment</li>
+					</ul>
+					<button class="service-btn">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Leanweave C/C++ Development Scope Section -->
+	<section id="scope" class="scope-section">
+		<div class="container">
+			<div class="scope-header">
+				<h2>Leanweave C/C++ Development Scope</h2>
+				<p>Our C and C++ expertise spans low-level systems, embedded devices, high-performance computing, and cross-platform applications—with a strong focus on quality and maintainability.</p>
+			</div>
+
+			<div class="scope-tabs">
+				<button class="scope-tab active" data-tab="frameworks">Frameworks</button>
+				<button class="scope-tab" data-tab="databases">Databases</button>
+				<button class="scope-tab" data-tab="systems">Systems</button>
+				<button class="scope-tab" data-tab="networking">Networking</button>
+				<button class="scope-tab" data-tab="cryptography">Cryptography</button>
+				<button class="scope-tab" data-tab="tools">Tools</button>
+			</div>
+
+			<div class="scope-content">
+				<!-- Frameworks Panel -->
+				<div id="frameworks" class="scope-panel active">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Application & UI Frameworks</h3>
+								<p>Ship polished, portable applications with modern C++ frameworks and battle-tested libraries.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Cross-platform UI and tooling</li>
+									<li>Native performance and GPU support</li>
+									<li>Internationalization and accessibility</li>
+									<li>Plugin systems and IPC</li>
+									<li>Packaged installers and updates</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Qt"></div><span>Qt</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Boost"></div><span>Boost</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="wx"></div><span>wxWidgets</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="JUCE"></div><span>JUCE</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="SDL"></div><span>SDL</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="OpenCV"></div><span>OpenCV</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Databases Panel -->
+				<div id="databases" class="scope-panel">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Database Integration</h3>
+								<p>Reliable storage with portable, high-performance libraries and drivers.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Type-safe access layers</li>
+									<li>Async I/O and connection pooling</li>
+									<li>ORMs and query builders</li>
+									<li>Migrations and schema tooling</li>
+									<li>Offline-first and embedded stores</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="SQLite"></div><span>SQLite</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Postgres"></div><span>PostgreSQL</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="MySQL"></div><span>MySQL</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="ODBC"></div><span>ODBC</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="LMDB"></div><span>LMDB</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="LevelDB"></div><span>LevelDB</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Systems Panel -->
+				<div id="systems" class="scope-panel">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Systems & Embedded</h3>
+								<p>Deterministic, low-overhead software for kernels, drivers, devices, and real-time environments.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Direct hardware and memory control</li>
+									<li>Real-time and safety-critical patterns</li>
+									<li>Portability across compilers and OSes</li>
+									<li>Board support packages and drivers</li>
+									<li>Diagnostics, tracing, and telemetry</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="POSIX"></div><span>POSIX</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Win32"></div><span>Win32</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="RTOS"></div><span>FreeRTOS</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Zephyr"></div><span>Zephyr</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="C++20"></div><span>C++20/23</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="no_std"></div><span>no‑RTTI</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Networking Panel -->
+				<div id="networking" class="scope-panel">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Network Programming</h3>
+								<p>High-throughput, low-latency network stacks and protocols with modern async paradigms.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Asynchronous I/O and event loops</li>
+									<li>Protocol design and implementation</li>
+									<li>gRPC, HTTP/2, WebSocket</li>
+									<li>Load balancing and resilience</li>
+									<li>Observability and tracing</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Asio"></div><span>Asio</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="gRPC"></div><span>gRPC</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="ZeroMQ"></div><span>ZeroMQ</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="libuv"></div><span>libuv</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="curl"></div><span>libcurl</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="nghttp"></div><span>nghttp2</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cryptography Panel -->
+				<div id="cryptography" class="scope-panel">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Cryptography & Security</h3>
+								<p>Implement secure, audited cryptographic primitives and protocols using mature, portable libraries.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Constant-time implementations</li>
+									<li>TLS stacks and PKI tooling</li>
+									<li>Secure storage and key management</li>
+									<li>FIPS-ready configurations</li>
+									<li>Threat modeling and audits</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="OpenSSL"></div><span>OpenSSL</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="libsodium"></div><span>libsodium</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="mbedTLS"></div><span>mbedTLS</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="wolfSSL"></div><span>wolfSSL</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Botan"></div><span>Botan</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Boring"></div><span>BoringSSL</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tools Panel -->
+				<div id="tools" class="scope-panel">
+					<div class="panel-layout">
+						<div class="panel-left">
+							<div class="framework-content">
+								<h3>Toolchain & DevOps</h3>
+								<p>Production-grade toolchains and pipelines for predictable builds and releases.</p>
+								<h4>Key Features</h4>
+								<ul class="benefits-list">
+									<li>Hermetic builds and reproducibility</li>
+									<li>Static analysis and sanitizers</li>
+									<li>Cross-compilation and packaging</li>
+									<li>Unit, integration, and fuzz testing</li>
+									<li>Containerized CI/CD pipelines</li>
+								</ul>
+								<button class="request-services-btn">Request Services</button>
+							</div>
+						</div>
+						<div class="panel-right">
+							<div class="tech-logos-grid">
+								<div class="tech-logo"><div class="logo-icon" data-fallback="GCC"></div><span>GCC</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Clang"></div><span>Clang/LLVM</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="MSVC"></div><span>MSVC</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="CMake"></div><span>CMake</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="Conan"></div><span>Conan</span></div>
+								<div class="tech-logo"><div class="logo-icon" data-fallback="vcpkg"></div><span>vcpkg</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Technology set Section -->
+	<section class="techset">
+		<div class="container">
+			<div class="techset__header">
+				<h2>Technology set</h2>
+				<p>Comprehensive C/C++ stack for building high-performance, portable applications</p>
+			</div>
+
+			<div class="techset__tabs" role="tablist">
+				<button class="techset__tab active" data-tech-panel="frameworks" role="tab" aria-selected="true">Frameworks</button>
+				<button class="techset__tab" data-tech-panel="systems" role="tab" aria-selected="false">Systems</button>
+				<button class="techset__tab" data-tech-panel="databases" role="tab" aria-selected="false">Databases</button>
+				<button class="techset__tab" data-tech-panel="tools" role="tab" aria-selected="false">Tools</button>
+				<button class="techset__tab" data-tech-panel="cryptography" role="tab" aria-selected="false">Cryptography</button>
+				<button class="techset__tab" data-tech-panel="networking" role="tab" aria-selected="false">Networking</button>
+			</div>
+
+			<div class="techset__carousel">
+				<button class="techset__nav techset__nav--prev" aria-label="Previous">‹</button>
+				<div class="techset__track" id="techsetTrack">
+					<div class="techset__panel active" id="frameworks" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+							<div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Qt">Qt</div><span>Qt</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Boost">Boost</div><span>Boost</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="wx">wxWidgets</div><span>wxWidgets</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="JUCE">JUCE</div><span>JUCE</span></div>
+						</div>
+					</div>
+
+					<div class="techset__panel" id="systems" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><div class="techset__icon" data-fallback="POSIX">POSIX</div><span>POSIX</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Win32">Win32</div><span>Win32</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="RTOS">FreeRTOS</div><span>FreeRTOS</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Zephyr">Zephyr</div><span>Zephyr</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="SIMD">SIMD</div><span>SIMD</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="C++20">C++20</div><span>C++20/23</span></div>
+						</div>
+					</div>
+
+					<div class="techset__panel" id="databases" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><div class="techset__icon" data-fallback="SQLite">SQLite</div><span>SQLite</span></div>
+							<div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+							<div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="ODBC">ODBC</div><span>ODBC</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="LMDB">LMDB</div><span>LMDB</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="LevelDB">LevelDB</div><span>LevelDB</span></div>
+						</div>
+					</div>
+
+					<div class="techset__panel" id="tools" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><div class="techset__icon" data-fallback="GCC">GCC</div><span>GCC</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Clang">Clang</div><span>Clang/LLVM</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="MSVC">MSVC</div><span>MSVC</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="CMake">CMake</div><span>CMake</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Conan">Conan</div><span>Conan</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="vcpkg">vcpkg</div><span>vcpkg</span></div>
+						</div>
+					</div>
+
+					<div class="techset__panel" id="cryptography" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><div class="techset__icon" data-fallback="OpenSSL">OpenSSL</div><span>OpenSSL</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="sodium">libsodium</div><span>libsodium</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="mbedTLS">mbedTLS</div><span>mbedTLS</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="wolfSSL">wolfSSL</div><span>wolfSSL</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Botan">Botan</div><span>Botan</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="Boring">BoringSSL</div><span>BoringSSL</span></div>
+						</div>
+					</div>
+
+					<div class="techset__panel" id="networking" role="tabpanel">
+						<div class="techset__items">
+							<div class="techset__item"><div class="techset__icon" data-fallback="Asio">Asio</div><span>Asio</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="gRPC">gRPC</div><span>gRPC</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="ZeroMQ">ZeroMQ</div><span>ZeroMQ</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="libuv">libuv</div><span>libuv</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="curl">libcurl</div><span>libcurl</span></div>
+							<div class="techset__item"><div class="techset__icon" data-fallback="nghttp">nghttp2</div><span>nghttp2</span></div>
+						</div>
+					</div>
+				</div>
+				<button class="techset__nav techset__nav--next" aria-label="Next">›</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Client Feedback Section -->
+	<section class="client-feedback">
+		<div class="feedback-container">
+			<div class="feedback-header">
+				<h2 class="feedback-title">Client Feedback</h2>
+				<p class="feedback-subtitle">Leanweave transformed our vision into reality!</p>
+			</div>
+
+			<div class="testimonials-grid">
+				<div class="testimonial">
+					<div class="stars">
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+					</div>
+					<p class="testimonial-text">"The team's attention to detail is unmatched. They exceeded our expectations!"</p>
+					<div class="client-info">
+						<div class="client-avatar">AJ</div>
+						<div class="client-details">
+							<div class="client-name">Alice Johnson</div>
+							<div class="client-title">Project Manager, TechCorp</div>
+						</div>
+						<div class="company-logo">
+							<img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg" alt="Matha Hospital">
+						</div>
+					</div>
+				</div>
+
+				<div class="testimonial">
+					<div class="stars">
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+						<svg class="star" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						</svg>
+					</div>
+					<p class="testimonial-text">"Working with Leanweave was a game changer for us. Their expertise is evident in every aspect of the project!"</p>
+					<div class="client-info">
+						<div class="client-avatar">MS</div>
+						<div class="client-details">
+							<div class="client-name">Mark Smith</div>
+							<div class="client-title">CEO, InnovateX</div>
+						</div>
+						<div class="company-logo">
+							<img class="company-logo" src="images/testimonial 1/logo/Ceph.svg" alt="Ceph">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="navigation">
+				<div class="nav-dots">
+					<div class="dot active"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+				<div class="nav-arrows">
+					<div class="nav-arrow">
+						<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+						</svg>
+					</div>
+					<div class="nav-arrow">
+						<svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Client Logos Section -->
+	<section class="clients">
+		<div class="container">
+			<div class="section-header">
+				<h3>Trusted by leading companies</h3>
+			</div>
+			<div class="clients__logos">
+				<img src="logos/Trusted by leading companies logos/Ceph.svg" alt="Ceph Logo">
+				<img src="logos/Trusted by leading companies logos/Matha_Hospital.svg" alt="Matha Hospital Logo">
+				<img src="logos/Trusted by leading companies logos/Tata Steel.svg" alt="Tata Steel Logo">
+				<img src="logos/Trusted by leading companies logos/Nestle-Logo.svg" alt="Nestle Logo">
+				<img src="logos/Trusted by leading companies logos/pirelli-logo.svg" alt="Pirelli Logo">
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer id="contact" class="main-footer">
+		<div class="main-footer_container">
+			<!-- CTA Section -->
+			<div class="footer__cta">
+				<div class="footer__cta-overlay">
+					<h2>Get Your Free C/C++ Consultation Today</h2>
+					<p>Ready to build high-performance, portable software? Our C/C++ engineers are here to help.</p>
+					<div class="footer__cta-buttons">
+						<a href="#" class="btn btn--primary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Links Grid -->
+			<div class="footer__content">
+				<div class="footer__grid">
+					<div class="footer__col">
+						<h4 class="footer__heading">Tech Stack</h4>
+						<ul class="footer__links">
+							<li><a href="backend-services.html">Back-end</a></li>
+							<li><a href="frontend-services.html">Front-end</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">iOS</a></li>
+							<li><a href="java-services.html">Java</a></li>
+							<li><a href="php-services.html">PHP</a></li>
+							<li><a href="react-services.html">React</a></li>
+							<li><a href="rust-services.html">Rust</a></li>
+							<li><a href="c-cpp-services.html">C/C++</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__col">
+						<h4 class="footer__heading">Industries We Serve</h4>
+						<ul class="footer__links">
+							<li><a href="#">Financial Services</a></li>
+							<li><a href="#">Healthcare</a></li>
+							<li><a href="#">Logistics</a></li>
+							<li><a href="#">Travel & Hospitality</a></li>
+							<li><a href="#">Automotive</a></li>
+							<li><a href="#">Media & Entertainment</a></li>
+							<li><a href="#">Telecom</a></li>
+							<li><a href="#">Manufacturing</a></li>
+							<li><a href="#">Real Estate</a></li>
+							<li><a href="#">iGaming</a></li>
+							<li><a href="#">Retail</a></li>
+							<li><a href="#">Nonprofit</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__col">
+						<h4 class="footer__heading">Our Services</h4>
+						<ul class="footer__links">
+							<li><a href="#">Mobile Development</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Quality Assurance</a></li>
+							<li><a href="#">Staff Augmentation</a></li>
+							<li><a href="#">Project Development Services</a></li>
+							<li><a href="#">Dedicated Team</a></li>
+							<li><a href="#">Engineering</a></li>
+							<li><a href="#">UI/UX Design</a></li>
+							<li><a href="#">DevOps Services</a></li>
+							<li><a href="#">Business Analysis</a></li>
+							<li><a href="#">Solution Architecture</a></li>
+							<li><a href="#">IoT Development Services</a></li>
+							<li><a href="#">Startups & MVP Services</a></li>
+							<li><a href="#">SaaS</a></li>
+							<li><a href="#">Database</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__col">
+						<h4 class="footer__heading">Company</h4>
+						<ul class="footer__links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Insights</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">GTC</a></li>
+							<li><a href="#">GTC for Consultancy services</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="footer__bottom">
+				<div class="footer__bottom-content">
+					<div class="footer__logo">
+						<img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+					</div>
+
+					<div class="footer__nav">
+						<a href="#">About Us</a>
+						<a href="#">Services</a>
+						<a href="#">Portfolio</a>
+						<a href="#">Blog</a>
+						<a href="#">Contact Us</a>
+					</div>
+
+					<div class="footer__social">
+						<a href="#" class="social-link" aria-label="Twitter">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+							</svg>
+						</a>
+						<a href="#" class="social-link" aria-label="LinkedIn">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+							</svg>
+						</a>
+						<a href="#" class="social-link" aria-label="Pinterest">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+							</svg>
+						</a>
+						<a href="#" class="social-link" aria-label="YouTube">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div class="footer__copyright">
+				<div class="copyright-links">
+					<span>© 2025 Leanweave. All rights reserved.</span>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+					<a href="#">Cookies Settings</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="c-cpp-services.js"></script>
+	<script src="hero-animation.js"></script>
+    <script>
+        (function(){
+            const dots = document.querySelectorAll('.nav-dots .dot');
+            const arrows = document.querySelectorAll('.nav-arrows .nav-arrow');
+            if(!dots.length || !arrows.length) return;
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    dots.forEach(d => d.classList.remove('active'));
+                    dot.classList.add('active');
+                });
+            });
+            let currentIndex = 0;
+            arrows.forEach((arrow, index) => {
+                arrow.addEventListener('click', () => {
+                    if (index === 0) {
+                        currentIndex = currentIndex > 0 ? currentIndex - 1 : dots.length - 1;
+                    } else {
+                        currentIndex = currentIndex < dots.length - 1 ? currentIndex + 1 : 0;
+                    }
+                    dots.forEach(d => d.classList.remove('active'));
+                    dots[currentIndex].classList.add('active');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
+
+

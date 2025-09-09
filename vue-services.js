@@ -1,0 +1,118 @@
+// Vue Services Page JavaScript
+
+document.addEventListener('DOMContentLoaded', function() {
+	// Tab switching functionality
+	const scopeTabs = document.querySelectorAll('.scope-tab');
+	const scopePanels = document.querySelectorAll('.scope-panel');
+
+	scopeTabs.forEach(tab => {
+		tab.addEventListener('click', () => {
+			const targetTab = tab.getAttribute('data-tab');
+			
+			// Remove active class from all tabs and panels
+			scopeTabs.forEach(t => t.classList.remove('active'));
+			scopePanels.forEach(p => p.classList.remove('active'));
+			
+			// Add active class to clicked tab and corresponding panel
+			tab.classList.add('active');
+			document.getElementById(targetTab).classList.add('active');
+		});
+	});
+
+	// Request Services button functionality
+	const requestButtons = document.querySelectorAll('.request-services-btn');
+	requestButtons.forEach(button => {
+		button.addEventListener('click', function() {
+			// Add click animation
+			this.style.transform = 'scale(0.95)';
+			setTimeout(() => {
+				this.style.transform = 'scale(1)';
+			}, 150);
+			
+			// You can add form submission logic here
+			console.log('Request Services button clicked');
+		});
+	});
+
+	// Smooth scrolling for anchor links
+	const anchorLinks = document.querySelectorAll('a[href^="#"]');
+	anchorLinks.forEach(link => {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			const targetId = this.getAttribute('href');
+			const targetElement = document.querySelector(targetId);
+			
+			if (targetElement) {
+				targetElement.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+			}
+		});
+	});
+
+	// Add loading animation for images (only hide images that aren't loaded yet)
+	const images = document.querySelectorAll('img');
+	images.forEach(img => {
+		img.style.transition = 'opacity 0.3s ease';
+		if (img.complete && img.naturalWidth > 0) {
+			img.style.opacity = '1';
+		} else {
+			img.style.opacity = '0';
+			img.addEventListener('load', function() {
+				this.style.opacity = '1';
+			}, { once: true });
+		}
+
+		// Fallback for failed image loads: show label instead of broken image
+		img.addEventListener('error', function() {
+			const parent = this.parentElement;
+			if (parent && parent.classList.contains('logo-icon')) {
+				const altText = this.getAttribute('alt') || 'Logo';
+				parent.setAttribute('data-fallback', altText);
+				parent.innerHTML = '';
+			}
+			// Ensure the area isn't invisible
+			this.style.opacity = '1';
+		}, { once: true });
+	});
+
+	// Add intersection observer for animations
+	const observerOptions = {
+		threshold: 0.1,
+		rootMargin: '0px 0px -50px 0px'
+	};
+
+	function isInViewport(element) {
+		const rect = element.getBoundingClientRect();
+		return (
+			rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.bottom > 0 &&
+			rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+			rect.right > 0
+		);
+	}
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.style.opacity = '1';
+				entry.target.style.transform = 'translateY(0)';
+			}
+		});
+	}, observerOptions);
+
+	// Observe elements for animation (do not hide elements already in viewport)
+	const animatedElements = document.querySelectorAll('.scope-panel, .stat-card');
+	animatedElements.forEach(el => {
+		el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+		if (isInViewport(el)) {
+			el.style.opacity = '1';
+			el.style.transform = 'translateY(0)';
+		} else {
+			el.style.opacity = '0';
+			el.style.transform = 'translateY(30px)';
+		}
+		observer.observe(el);
+	});
+});

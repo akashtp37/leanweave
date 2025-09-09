@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leanweave - Tech Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tech-stack.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <a href="leanweve_home_page.html" class="logo">
+                    <img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+                        <div class="mega-menu" id="techStackMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="frontend">Front-end</a>
+                                    <a href="#" class="category-item" data-category="backend">Back-end</a>
+                                    <a href="#" class="category-item" data-category="mobile">Mobile</a>
+                                </div>
+                                
+                                <div class="category-content active" id="frontend">
+                                    <div class="content-header">
+                                        <h2>Front-end Development</h2>
+                                        <p>Create stunning user interfaces with modern front-end technologies</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="tech-card">
+                                            <h3>Front-end Development</h3>
+                                            <p>Leanweave crafts sleek, high-performance interfaces that make your brand stand out and your users stay engaged.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Angular</h3>
+                                            <p>Delivering scalable, future-ready web applications with precision and adaptability.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>React</h3>
+                                            <p>Creating fast, dynamic, and resilient front-end solutions tailored to your vision.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Vue</h3>
+                                            <p>Building responsive, intuitive, and delightfully smooth user experiences.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="category-content" id="backend">
+                                    <div class="content-header">
+                                        <h2>Back-end Development</h2>
+                                        <p>Robust server-side solutions with scalable architectures</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="tech-card">
+                                            <h3>Back-end Development</h3>
+                                            <p>Leanweave's expert engineers design secure, scalable, and high-performance systems that power your business from the inside out.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Java</h3>
+                                            <p>Enterprise-grade applications built for stability and longevity.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>.NET</h3>
+                                            <p>Seamless, reliable, and future-ready solutions with .NET expertise.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Node</h3>
+                                            <p>Lightning-fast, scalable, and real-time applications with Node.js.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Python</h3>
+                                            <p>Innovation through Python's adaptability and robust ecosystem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="category-content" id="mobile">
+                                    <div class="content-header">
+                                        <h2>Mobile Development</h2>
+                                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="tech-card">
+                                            <h3>Android</h3>
+                                            <p>Seamless, user-focused Android experiences that inspire engagement.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>iOS</h3>
+                                            <p>Sleek, high-performance iOS applications with precision and style.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>React Native</h3>
+                                            <p>Efficient, cross-platform apps with React Native's power and versatility.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Flutter</h3>
+                                            <p>Rapid, flexible, and elegant solutions for modern mobile apps.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero__container container">
+                <h1 class="page-hero__title">Our Tech Stack</h1>
+                <p class="page-hero__subtitle">Modern, scalable technologies that power reliable digital products.</p>
+            </div>
+        </section>
+
+        <!-- Tech Stack Hub -->
+        <section class="stack">
+            <div class="container">
+                <div class="stack-wrapper">
+                    <div class="category-nav stack-tabs">
+                        <a href="#" class="category-item active" data-target="stack-frontend">Front-end</a>
+                        <a href="#" class="category-item" data-target="stack-backend">Back-end</a>
+                        <a href="#" class="category-item" data-target="stack-mobile">Mobile</a>
+                        <a href="#" class="category-item" data-target="stack-devops">DevOps</a>
+                        <a href="#" class="category-item" data-target="stack-cloud">Cloud</a>
+                        <a href="#" class="category-item" data-target="stack-databases">Databases</a>
+                        <a href="#" class="category-item" data-target="stack-testing">Testing</a>
+                        <a href="#" class="category-item" data-target="stack-tools">Tools</a>
+                    </div>
+
+                    <div class="stack-content">
+                        <div class="category-content active" id="stack-frontend">
+                            <div class="content-header">
+                                <h2>Front-end</h2>
+                                <p>Component-driven development, pixel-perfect UI, and performance-first delivery.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+                                    </div>
+                                    <h3>React</h3>
+                                    <p>Production-grade SPAs and micro-frontends.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular Logo">
+                                    </div>
+                                    <h3>Angular</h3>
+                                    <p>Enterprise-scale dashboards and portals.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue Logo">
+                                    </div>
+                                    <h3>Vue</h3>
+                                    <p>Lightweight, progressive apps with great DX.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js Logo">
+                                    </div>
+                                    <h3>Next.js</h3>
+                                    <p>SSR/SSG for SEO, speed, and scalability.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript Logo">
+                                    </div>
+                                    <h3>TypeScript</h3>
+                                    <p>Safer codebases with strong typing.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS Logo">
+                                    </div>
+                                    <h3>Tailwind CSS</h3>
+                                    <p>Consistent design systems with utility-first CSS.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-backend">
+                            <div class="content-header">
+                                <h2>Back-end</h2>
+                                <p>Secure, reliable APIs and services designed for growth.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo">
+                                    </div>
+                                    <h3>Node.js</h3>
+                                    <p>Event-driven services and real-time APIs.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+                                    </div>
+                                    <h3>Python</h3>
+                                    <p>Fast prototyping, data workflows, and services.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
+                                    </div>
+                                    <h3>Java</h3>
+                                    <p>Battle-tested enterprise back-ends.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET Logo">
+                                    </div>
+                                    <h3>.NET</h3>
+                                    <p>Robust, high-performance platforms.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go Logo">
+                                    </div>
+                                    <h3>Go</h3>
+                                    <p>High-throughput services with minimal latency.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL Logo">
+                                    </div>
+                                    <h3>GraphQL / REST</h3>
+                                    <p>Well-structured contracts for clients.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-mobile">
+                            <div class="content-header">
+                                <h2>Mobile</h2>
+                                <p>Native and cross-platform apps optimized for performance and UX.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift Logo">
+                                    </div>
+                                    <h3>Swift / Kotlin</h3>
+                                    <p>Native-first experiences for iOS and Android.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native Logo">
+                                    </div>
+                                    <h3>React Native</h3>
+                                    <p>Shared codebase, native performance.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter Logo">
+                                    </div>
+                                    <h3>Flutter</h3>
+                                    <p>High-fidelity UIs across platforms.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://raw.githubusercontent.com/webmaxru/progressive-web-apps-logo/master/pwalogo.svg" alt="PWA Logo">
+                                    </div>
+                                    <h3>PWA</h3>
+                                    <p>Installable, offline-first web apps.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-devops">
+                            <div class="content-header">
+                                <h2>DevOps</h2>
+                                <p>Automation, observability, and resilient delivery pipelines.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker Logo">
+                                    </div>
+                                    <h3>Docker</h3>
+                                    <p>Portable, reproducible deployments.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes Logo">
+                                    </div>
+                                    <h3>Kubernetes</h3>
+                                    <p>Orchestrated workloads at scale.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="CI/CD Logo">
+                                    </div>
+                                    <h3>CI/CD</h3>
+                                    <p>GitHub Actions, GitLab CI, Azure DevOps.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Monitoring Logo">
+                                    </div>
+                                    <h3>Monitoring</h3>
+                                    <p>Prometheus, Grafana, ELK, OpenTelemetry.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-cloud">
+                            <div class="content-header">
+                                <h2>Cloud</h2>
+                                <p>Elastic, cost-efficient infrastructure and managed services.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo">
+                                    </div>
+                                    <h3>AWS</h3>
+                                    <p>Serverless, ECS/EKS, RDS, CloudFront.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure Logo">
+                                    </div>
+                                    <h3>Azure</h3>
+                                    <p>App Services, AKS, Functions, Cosmos DB.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP Logo">
+                                    </div>
+                                    <h3>GCP</h3>
+                                    <p>GKE, Cloud Run, Firebase, BigQuery.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.simpleicons.org/serverless" alt="Serverless Logo">
+                                    </div>
+                                    <h3>Serverless</h3>
+                                    <p>Functions-first architectures.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-databases">
+                            <div class="content-header">
+                                <h2>Databases</h2>
+                                <p>Right-fit storage for transactional and analytical workloads.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo">
+                                    </div>
+                                    <h3>PostgreSQL</h3>
+                                    <p>Reliable relational cornerstone.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo">
+                                    </div>
+                                    <h3>MySQL</h3>
+                                    <p>Proven OLTP engine.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo">
+                                    </div>
+                                    <h3>MongoDB</h3>
+                                    <p>Flexible document storage.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis Logo">
+                                    </div>
+                                    <h3>Redis</h3>
+                                    <p>In-memory speed for caching/queues.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch Logo">
+                                    </div>
+                                    <h3>Elasticsearch</h3>
+                                    <p>Search and analytics at scale.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-testing">
+                            <div class="content-header">
+                                <h2>Testing</h2>
+                                <p>Quality-first engineering with automation across the stack.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest Logo">
+                                    </div>
+                                    <h3>Jest</h3>
+                                    <p>Fast unit and integration testing.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo">
+                                    </div>
+                                    <h3>Playwright / Cypress</h3>
+                                    <p>Modern E2E browsers tests.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman Logo">
+                                    </div>
+                                    <h3>Postman</h3>
+                                    <p>API contract and regression suites.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.simpleicons.org/k6" alt="k6 Logo">
+                                    </div>
+                                    <h3>k6</h3>
+                                    <p>Load testing for critical paths.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-content" id="stack-tools">
+                            <div class="content-header">
+                                <h2>Collaboration & DX</h2>
+                                <p>Tools that enhance productivity and delivery velocity.</p>
+                            </div>
+                            <div class="content-grid">
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo">
+                                    </div>
+                                    <h3>GitHub / GitLab</h3>
+                                    <p>PR workflows and code reviews.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" alt="Storybook Logo">
+                                    </div>
+                                    <h3>Storybook</h3>
+                                    <p>Isolated UI systems and docs.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" alt="ESLint Logo">
+                                    </div>
+                                    <h3>ESLint / Prettier</h3>
+                                    <p>Consistent, maintainable code.</p>
+                                </div>
+                                <div class="tech-card">
+                                    <div class="tech-logo">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma Logo">
+                                    </div>
+                                    <h3>Figma</h3>
+                                    <p>Design-to-dev collaboration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leanweave's Guarantees Section -->
+        <section class="guarantees">
+            <div class="container">
+                <div class="guarantees__header">
+                    <h2>Leanweave's Guarantees</h2>
+                    <p>As a software development vendor and consulting partner, our team is notable for:</p>
+                </div>
+                
+                <div class="guarantees__grid">
+                    <div class="guarantee-card">
+                        <h3>Professional Practices</h3>
+                        <p>In order to practice up-to-date approaches and implement modern projects, our specialists are regularly certified by the most trusted and progressive entities.</p>
+                    </div>
+                    
+                    <div class="guarantee-card">
+                        <h3>Customer Trust</h3>
+                        <p>Thanks to our high professional standards, effective workflows, and focus on quality, we have earned a positive reputation that is reflected in our rankings – e.g., 4.9/5 on Clutch.</p>
+                    </div>
+                    
+                    <div class="guarantee-card">
+                        <h3>Strategic Development Partner</h3>
+                        <p>Leanweave's referring customers prove our reliability and dedication. After your IT project is completed, we will be happy to provide ongoing support and maintenance, upgrade existing solutions, and implement new ones.</p>
+                    </div>
+                    
+                    <div class="guarantee-card">
+                        <h3>Individual Approach</h3>
+                        <p>Leanweave is a custom software development company that seeks to employ and allocate IT specialists with both the hard and soft skills required to seamlessly integrate with your in-house team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Testimonial Section -->
+            <section class="client-feedback">
+                <div class="feedback-header">
+                    <h2>Client Feedback</h2>
+                    <p>Leanweave transformed our vision into reality!</p>
+                </div>
+
+                <div class="feedback-slider">
+                    <div class="feedback-track">
+                        <div class="feedback-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"The team's attention to detail is unmatched. They exceeded our expectations!"</p>
+                            <div class="client-meta">
+                                <img src="images/testimonial 1/avatar/alice.svg" alt="Alice Johnson">
+                                <div>
+                                    <strong>Alice Johnson</strong>
+                                    <span>Project Manager, TechCorp</span>
+                                </div>
+                                <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg" alt="Matha Hospital">
+                            </div>
+                        </div>
+
+                        <div class="feedback-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Working with Leanweave was a game changer for us. Their expertise is evident in every aspect of the project!"</p>
+                            <div class="client-meta">
+                                <img src="images/testimonial 1/avatar/mark.svg" alt="Mark Smith">
+                                <div>
+                                    <strong>Mark Smith</strong>
+                                    <span>CEO, InnovateX</span>
+                                </div>
+                                <img class="company-logo" src="images/testimonial 1/logo/Ceph.svg" alt="Ceph">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <button class="slider-btn prev" aria-label="Previous testimonial">←</button>
+                    <button class="slider-btn next" aria-label="Next testimonial">→</button>
+                </div>
+            </section>
+
+    <!-- Footer with embedded Testimonial section -->
+    <footer id="contact" class="main-footer">
+        <div class="main-footer_container">
+            <div class="footer__cta">
+                <div class="footer__cta-overlay">
+                    <h2>Get Your Free Consultation Today</h2>
+                    <p>Ready to elevate your project? Our expert developers are here to help you succeed.</p>
+                    <div class="footer__cta-buttons">
+                        <a href="#" class="btn btn--primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="footer__content">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Tech Stack</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Back-end</a></li>
+                            <li><a href="#">Front-end</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Industries We Serve</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Financial Services</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Logistics</a></li>
+                            <li><a href="#">Travel & Hospitality</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Media & Entertainment</a></li>
+                            <li><a href="#">Telecom</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">iGaming</a></li>
+                            <li><a href="#">Retail</a></li>
+                            <li><a href="#">Nonprofit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Our Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Quality Assurance</a></li>
+                            <li><a href="#">Staff Augmentation</a></li>
+                            <li><a href="#">Project Development Services</a></li>
+                            <li><a href="#">Dedicated Team</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">DevOps Services</a></li>
+                            <li><a href="#">Business Analysis</a></li>
+                            <li><a href="#">Solution Architecture</a></li>
+                            <li><a href="#">IoT Development Services</a></li>
+                            <li><a href="#">Startups & MVP Services</a></li>
+                            <li><a href="#">SaaS</a></li>
+                            <li><a href="#">Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">GTC</a></li>
+                            <li><a href="#">GTC for Consultancy services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <div class="footer__logo">
+                        <img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+                    </div>
+                    
+                    <div class="footer__nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                <div class="copyright-links">
+                    <span>© 2025 Leanweave. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    	<script src="tech-stack.js"></script>
+	<script src="hero-animation.js"></script>
+</body>
+</html>
+
+

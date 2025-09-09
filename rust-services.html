@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Development Services - Leanweave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rust-services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <div class="leanweave_logo">
+                <a href="leanweve_home_page.html" class="logo">
+                    <img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+                </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+                        <div class="mega-menu" id="techStackMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="frontend">Front-end</a>
+                                    <a href="#" class="category-item" data-category="backend">Back-end</a>
+                                    <a href="#" class="category-item" data-category="mobile">Mobile</a>
+                                </div>
+                                
+                                <!-- Front-end Technologies -->
+                                <div class="category-content active" id="frontend">
+                                    <div class="content-header">
+                                        <h2>Front-end Development</h2>
+                                        <p>Create stunning user interfaces with modern front-end technologies</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="frontend-services.html" class="tech-card">
+                                            <h3>Front-end Development</h3>
+                                            <p>Leanweave crafts sleek, high-performance interfaces that make your brand stand out and your users stay engaged.</p>
+                                        </a>
+                                        <a href="angular-services.html" class="tech-card">
+                                            <h3>Angular</h3>
+                                            <p>Delivering scalable, future-ready web applications with precision and adaptability.</p>
+                                        </a>
+                                        <a href="react-services.html" class="tech-card">
+                                            <h3>React</h3>
+                                            <p>Creating fast, dynamic, and resilient front-end solutions tailored to your vision.</p>
+                                        </a>
+                                        <a href="vue-services.html" class="tech-card">
+                                            <h3>Vue</h3>
+                                            <p>Building responsive, intuitive, and delightfully smooth user experiences.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Back-end Technologies -->
+                                <div class="category-content" id="backend">
+                                    <div class="content-header">
+                                        <h2>Back-end Development</h2>
+                                        <p>Robust server-side solutions with scalable architectures</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="backend-services.html" class="tech-card">
+                                            <h3>Back-end Development</h3>
+                                            <p>Leanweave's expert engineers design secure, scalable, and high-performance systems that power your business from the inside out.</p>
+                                        </a>
+                                        <a href="java-services.html" class="tech-card">
+                                            <h3>Java</h3>
+                                            <p>Developing enterprise-grade applications built for stability and longevity.</p>
+                                        </a>
+                                        <a href="dotnet-services.html" class="tech-card">
+                                            <h3>.NET</h3>
+                                            <p>Delivering seamless, reliable, and future-ready solutions with .NET expertise.</p>
+                                        </a>
+                                        <a href="php-services.html" class="tech-card">
+                                            <h3>PHP</h3>
+                                            <p>Creating dynamic, versatile, and business-focused web applications.</p>
+                                        </a>
+                                        <a href="python-services.html" class="tech-card">
+                                            <h3>Python</h3>
+                                            <p>Driving innovation through Python's adaptability and robust ecosystem.</p>
+                                        </a>
+                                        <a href="nodejs-services.html" class="tech-card">
+                                            <h3>Node.js</h3>
+                                            <p>Building lightning-fast, scalable, and real-time applications with Node.js.</p>
+                                        </a>
+                                        <a href="ruby-services.html" class="tech-card">
+                                            <h3>Ruby</h3>
+                                            <p>Crafting elegant, efficient, and maintainable back-end solutions.</p>
+                                        </a>
+                                        <a href="golang-services.html" class="tech-card">
+                                            <h3>Golang</h3>
+                                            <p>Engineering high-performance systems with speed and precision.</p>
+                                        </a>
+                                        <a href="scala-services.html" class="tech-card">
+                                            <h3>Scala</h3>
+                                            <p>Developing scalable, functional, and future-proof applications.</p>
+                                        </a>
+                                        <a href="rust-services.html" class="tech-card">
+                                            <h3>Rust</h3>
+                                            <p>Ensuring unmatched safety, performance, and reliability.</p>
+                                        </a>
+                                        <div class="tech-card">
+                                            <h3>C/C++</h3>
+                                            <p>Delivering powerful, high-efficiency systems with C and C++.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Technologies -->
+                                <div class="category-content" id="mobile">
+                                    <div class="content-header">
+                                        <h2>Mobile Development</h2>
+                                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Designing native, cross-platform, and progressive apps that deliver flawless performance everywhere.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Android</h3>
+                                            <p>Crafting seamless, user-focused Android experiences that inspire engagement.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>iOS</h3>
+                                            <p>Building sleek, high-performance iOS applications with precision and style.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>React Native</h3>
+                                            <p>Creating efficient, cross-platform apps with React Native's power and versatility.</p>
+                                        </div>
+                                        <div class="tech-card">
+                                            <h3>Flutter</h3>
+                                            <p>Transforming app ideas into reality with Flutter's speed, flexibility, and elegance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">Rust</span><br>
+                    <span class="word">Development...</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Build blazingly fast, memory-safe systems with Rust's revolutionary approach to systems programming.
+                    We deliver zero-cost abstraction applications with guaranteed memory safety, delivering unmatched 
+                    performance and reliability for mission-critical systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn--secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="statistics-grid">
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years on Market</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Rust Developers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">80+</div>
+                <div class="stat-label">Rust Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rust Development Services Section -->
+    <section id="services" class="rust-services-section">
+        <div class="container">
+            <div class="services-header">
+                <h2>Rust Development Services</h2>
+                <p>Comprehensive Rust development solutions tailored to your business needs. From systems programming to web backends, we provide end-to-end Rust services with unmatched safety and performance.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Systems Programming Services</h3>
+                    <p>Build high-performance system software with Rust's memory safety guarantees and zero-cost abstractions for maximum efficiency and reliability.</p>
+                    <ul class="service-features">
+                        <li>Operating system development</li>
+                        <li>Device drivers & embedded systems</li>
+                        <li>Network programming & protocols</li>
+                        <li>Performance-critical applications</li>
+                        <li>Memory-safe system utilities</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Web Backend Development</h3>
+                    <p>Create blazingly fast web services and APIs using Rust's modern web frameworks with guaranteed memory safety and exceptional performance.</p>
+                    <ul class="service-features">
+                        <li>High-performance web APIs</li>
+                        <li>Concurrent web services</li>
+                        <li>Database integration & ORMs</li>
+                        <li>Authentication & authorization</li>
+                        <li>Microservices architecture</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Blockchain & Cryptography</h3>
+                    <p>Leverage Rust's security-first design for blockchain applications, cryptocurrency tools, and cryptographic systems requiring absolute trust and performance.</p>
+                    <ul class="service-features">
+                        <li>Smart contract development</li>
+                        <li>Cryptocurrency wallets</li>
+                        <li>Cryptographic libraries</li>
+                        <li>Blockchain node implementation</li>
+                        <li>Security auditing tools</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Performance Optimization</h3>
+                    <p>Transform existing applications by rewriting performance-critical components in Rust, achieving dramatic speed improvements while maintaining safety.</p>
+                    <ul class="service-features">
+                        <li>Critical path optimization</li>
+                        <li>Memory usage optimization</li>
+                        <li>Concurrency & parallelism</li>
+                        <li>FFI integration</li>
+                        <li>Performance profiling & analysis</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>CLI Tools & Utilities</h3>
+                    <p>Develop powerful command-line applications and developer tools with Rust's excellent ecosystem for creating fast, reliable, and cross-platform utilities.</p>
+                    <ul class="service-features">
+                        <li>Developer tooling</li>
+                        <li>System administration tools</li>
+                        <li>Build systems & automation</li>
+                        <li>Cross-platform deployment</li>
+                        <li>Package management tools</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leanweave Rust Development Scope Section -->
+    <section id="scope" class="scope-section">
+        <div class="container">
+            <div class="scope-header">
+                <h2>Leanweave Rust Development Scope</h2>
+                <p>Comprehensive Rust services designed for maximum performance, safety, and reliability. From systems programming to web development and blockchain, we leverage Rust's unique advantages to deliver cutting-edge solutions.</p>
+            </div>
+
+            <div class="scope-tabs">
+                <button class="scope-tab active" data-tab="frameworks">Frameworks</button>
+                <button class="scope-tab" data-tab="databases">Databases</button>
+                <button class="scope-tab" data-tab="systems">Systems</button>
+                <button class="scope-tab" data-tab="networking">Networking</button>
+                <button class="scope-tab" data-tab="cryptography">Cryptography</button>
+                <button class="scope-tab" data-tab="tools">Tools</button>
+            </div>
+
+            <div class="scope-content">
+                <!-- Frameworks Panel -->
+                <div id="frameworks" class="scope-panel active">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Web & Application Frameworks</h3>
+                                <p>Build robust applications with Rust's powerful frameworks offering memory safety, speed, and modern development patterns for web and system applications.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Zero-cost abstractions</li>
+                                    <li>Memory safety guarantees</li>
+                                    <li>Concurrent request handling</li>
+                                    <li>Type-safe routing & middleware</li>
+                                    <li>Built-in performance optimization</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Actix"></div><span>Actix Web</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Rocket"></div><span>Rocket</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Axum"></div><span>Axum</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Warp"></div><span>Warp</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Tide"></div><span>Tide</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Tauri"></div><span>Tauri</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases Panel -->
+                <div id="databases" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Database Integration</h3>
+                                <p>Connect to various databases with type-safe, high-performance Rust libraries offering async capabilities and connection pooling.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Type-safe query building</li>
+                                    <li>Async database operations</li>
+                                    <li>Connection pooling & management</li>
+                                    <li>Migration support</li>
+                                    <li>ORM & query builders</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Diesel"></div><span>Diesel</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="SQLx"></div><span>SQLx</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="SeaORM"></div><span>SeaORM</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="PostgreSQL"></div><span>PostgreSQL</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Redis"></div><span>Redis</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="MongoDB"></div><span>MongoDB</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Systems Panel -->
+                <div id="systems" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Systems Programming</h3>
+                                <p>Develop low-level systems software with Rust's unique combination of performance and safety, eliminating entire classes of bugs common in systems programming.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Memory safety without garbage collection</li>
+                                    <li>Zero-cost concurrency</li>
+                                    <li>Cross-platform development</li>
+                                    <li>Direct hardware access</li>
+                                    <li>Embedded systems support</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Tokio"></div><span>Tokio</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Rayon"></div><span>Rayon</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Crossbeam"></div><span>Crossbeam</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Embassy"></div><span>Embassy</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="RTIC"></div><span>RTIC</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="no_std"></div><span>no_std</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Networking Panel -->
+                <div id="networking" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Network Programming</h3>
+                                <p>Build high-performance network applications with Rust's async ecosystem, providing excellent throughput and low-latency networking solutions.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Async network programming</li>
+                                    <li>Protocol implementation</li>
+                                    <li>High-throughput servers</li>
+                                    <li>WebSocket & HTTP/2 support</li>
+                                    <li>Custom protocol development</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Hyper"></div><span>Hyper</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Reqwest"></div><span>Reqwest</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Tonic"></div><span>Tonic</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Quinn"></div><span>Quinn</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Mio"></div><span>Mio</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Socket2"></div><span>Socket2</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cryptography Panel -->
+                <div id="cryptography" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Cryptography & Security</h3>
+                                <p>Implement secure cryptographic solutions with Rust's robust security-focused ecosystem, ensuring constant-time operations and memory safety.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Memory-safe cryptography</li>
+                                    <li>Constant-time implementations</li>
+                                    <li>Blockchain development</li>
+                                    <li>Digital signatures & hashing</li>
+                                    <li>Zero-knowledge proofs</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="RustCrypto"></div><span>RustCrypto</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Ring"></div><span>Ring</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Dalek"></div><span>Dalek</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Substrate"></div><span>Substrate</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Secp256k1"></div><span>Secp256k1</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Arkworks"></div><span>Arkworks</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Panel -->
+                <div id="tools" class="scope-panel">
+                    <div class="panel-layout">
+                        <div class="panel-left">
+                            <div class="framework-content">
+                                <h3>Development Tools</h3>
+                                <p>Comprehensive toolchain for Rust development including testing, documentation, packaging, and deployment tools for professional development workflows.</p>
+                                <h4>Key Features</h4>
+                                <ul class="benefits-list">
+                                    <li>Integrated testing framework</li>
+                                    <li>Documentation generation</li>
+                                    <li>Package management</li>
+                                    <li>Cross-compilation support</li>
+                                    <li>Performance profiling</li>
+                                </ul>
+                                <button class="request-services-btn">Request Services</button>
+                            </div>
+                        </div>
+                        <div class="panel-right">
+                            <div class="tech-logos-grid">
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Cargo"></div><span>Cargo</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Rustup"></div><span>Rustup</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Clippy"></div><span>Clippy</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Rustfmt"></div><span>Rustfmt</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Miri"></div><span>Miri</span></div>
+                                <div class="tech-logo"><div class="logo-icon" data-fallback="Criterion"></div><span>Criterion</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology set Section -->
+    <section class="techset">
+        <div class="container">
+            <div class="techset__header">
+                <h2>Technology set</h2>
+                <p>Comprehensive Rust technology stack for building high-performance, memory-safe applications</p>
+            </div>
+            
+            <div class="techset__tabs" role="tablist">
+                <button class="techset__tab active" data-tech-panel="frameworks" role="tab" aria-selected="true">Frameworks</button>
+                <button class="techset__tab" data-tech-panel="systems" role="tab" aria-selected="false">Systems</button>
+                <button class="techset__tab" data-tech-panel="databases" role="tab" aria-selected="false">Databases</button>
+                <button class="techset__tab" data-tech-panel="tools" role="tab" aria-selected="false">Tools</button>
+                <button class="techset__tab" data-tech-panel="cryptography" role="tab" aria-selected="false">Cryptography</button>
+                <button class="techset__tab" data-tech-panel="networking" role="tab" aria-selected="false">Networking</button>
+            </div>
+            
+            <div class="techset__carousel">
+                <button class="techset__nav techset__nav--prev" aria-label="Previous">‹</button>
+                <div class="techset__track" id="techsetTrack">
+                    
+                    <div class="techset__panel active" id="frameworks" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" alt="Rust"><span>Rust</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Actix">Actix</div><span>Actix Web</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Rocket">Rocket</div><span>Rocket</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Axum">Axum</div><span>Axum</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Warp">Warp</div><span>Warp</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Tide">Tide</div><span>Tide</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Tauri">Tauri</div><span>Tauri</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="techset__panel" id="systems" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Tokio">Tokio</div><span>Tokio</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Rayon">Rayon</div><span>Rayon</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Crossbeam">Crossbeam</div><span>Crossbeam</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Embassy">Embassy</div><span>Embassy</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="RTIC">RTIC</div><span>RTIC</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="no_std">no_std</div><span>no_std</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="techset__panel" id="databases" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Diesel">Diesel</div><span>Diesel</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="SQLx">SQLx</div><span>SQLx</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="SeaORM">SeaORM</div><span>SeaORM</span></div>
+                            <div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+                            <div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"><span>Redis</span></div>
+                            <div class="techset__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="techset__panel" id="tools" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Cargo">Cargo</div><span>Cargo</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Rustup">Rustup</div><span>Rustup</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Clippy">Clippy</div><span>Clippy</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Rustfmt">Rustfmt</div><span>Rustfmt</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Miri">Miri</div><span>Miri</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Criterion">Criterion</div><span>Criterion</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="techset__panel" id="cryptography" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><div class="techset__icon" data-fallback="RustCrypto">RustCrypto</div><span>RustCrypto</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Ring">Ring</div><span>Ring</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Dalek">Dalek</div><span>Dalek</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Substrate">Substrate</div><span>Substrate</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Secp256k1">Secp256k1</div><span>Secp256k1</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Arkworks">Arkworks</div><span>Arkworks</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="techset__panel" id="networking" role="tabpanel">
+                        <div class="techset__items">
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Hyper">Hyper</div><span>Hyper</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Reqwest">Reqwest</div><span>Reqwest</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Tonic">Tonic</div><span>Tonic</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Quinn">Quinn</div><span>Quinn</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Mio">Mio</div><span>Mio</span></div>
+                            <div class="techset__item"><div class="techset__icon" data-fallback="Socket2">Socket2</div><span>Socket2</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="techset__nav techset__nav--next" aria-label="Next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Feedback Section -->
+    <section class="client-feedback">
+        <div class="feedback-header">
+            <h2>Client Feedback</h2>
+            <p>Leanweave transformed our vision into reality!</p>
+        </div>
+
+        <div class="feedback-slider">
+            <div class="feedback-track">
+                <div class="feedback-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The team's attention to detail is unmatched. They exceeded our expectations!"</p>
+                    <div class="client-meta">
+                        <img src="images/testimonial 1/avatar/alice.svg" alt="Alice Johnson">
+                        <div>
+                            <strong>Alice Johnson</strong>
+                            <span>Project Manager, TechCorp</span>
+                        </div>
+                        <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg" alt="Matha Hospital">
+                    </div>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Working with Leanweave was a game changer for us. Their expertise is evident in every aspect of the project!"</p>
+                    <div class="client-meta">
+                        <img src="images/testimonial 1/avatar/mark.svg" alt="Mark Smith">
+                        <div>
+                            <strong>Mark Smith</strong>
+                            <span>CEO, InnovateX</span>
+                        </div>
+                        <img class="company-logo" src="images/testimonial 1/logo/Ceph.svg" alt="Ceph">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+
+            <button class="slider-btn prev">←</button>
+            <button class="slider-btn next">→</button>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h3>Trusted by leading companies</h3>
+            </div>
+            <div class="clients__logos">
+                <img src="logos/Trusted by leading companies logos/Ceph.svg" alt="Ceph Logo">
+                <img src="logos/Trusted by leading companies logos/Matha_Hospital.svg" alt="Matha Hospital Logo">
+                <img src="logos/Trusted by leading companies logos/Tata Steel.svg" alt="Tata Steel Logo">
+                <img src="logos/Trusted by leading companies logos/Nestle-Logo.svg" alt="Nestle Logo">
+                <img src="logos/Trusted by leading companies logos/pirelli-logo.svg" alt="Pirelli Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="main-footer">
+        <div class="main-footer_container">
+            <!-- CTA Section -->
+            <div class="footer__cta">
+                <div class="footer__cta-overlay">
+                    <h2>Get Your Free Rust Consultation Today</h2>
+                    <p>Ready to build blazingly fast, memory-safe applications? Our expert Rust developers are here to help you succeed.</p>
+                    <div class="footer__cta-buttons">
+                        <a href="#" class="btn btn--primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links Grid -->
+            <div class="footer__content">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Tech Stack</h4>
+                        <ul class="footer__links">
+                            <li><a href="backend-services.html">Back-end</a></li>
+                            <li><a href="frontend-services.html">Front-end</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="java-services.html">Java</a></li>
+                            <li><a href="php-services.html">PHP</a></li>
+                            <li><a href="react-services.html">React</a></li>
+                            <li><a href="rust-services.html">Rust</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Industries We Serve</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Financial Services</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Logistics</a></li>
+                            <li><a href="#">Travel & Hospitality</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Media & Entertainment</a></li>
+                            <li><a href="#">Telecom</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">iGaming</a></li>
+                            <li><a href="#">Retail</a></li>
+                            <li><a href="#">Nonprofit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Our Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Quality Assurance</a></li>
+                            <li><a href="#">Staff Augmentation</a></li>
+                            <li><a href="#">Project Development Services</a></li>
+                            <li><a href="#">Dedicated Team</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">DevOps Services</a></li>
+                            <li><a href="#">Business Analysis</a></li>
+                            <li><a href="#">Solution Architecture</a></li>
+                            <li><a href="#">IoT Development Services</a></li>
+                            <li><a href="#">Startups & MVP Services</a></li>
+                            <li><a href="#">SaaS</a></li>
+                            <li><a href="#">Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">GTC</a></li>
+                            <li><a href="#">GTC for Consultancy services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <div class="footer__logo">
+                        <img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+                    </div>
+                    
+                    <div class="footer__nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <div class="copyright-links">
+                    <span>© 2025 Leanweave. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="rust-services.js"></script>
+    <script src="hero-animation.js"></script>
+    <script>
+        (function(){
+            const dots = document.querySelectorAll('.nav-dots .dot');
+            const arrows = document.querySelectorAll('.nav-arrows .nav-arrow');
+            if(!dots.length || !arrows.length) return;
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    dots.forEach(d => d.classList.remove('active'));
+                    dot.classList.add('active');
+                });
+            });
+            let currentIndex = 0;
+            arrows.forEach((arrow, index) => {
+                arrow.addEventListener('click', () => {
+                    if (index === 0) {
+                        currentIndex = currentIndex > 0 ? currentIndex - 1 : dots.length - 1;
+                    } else {
+                        currentIndex = currentIndex < dots.length - 1 ? currentIndex + 1 : 0;
+                    }
+                    dots.forEach(d => d.classList.remove('active'));
+                    dots[currentIndex].classList.add('active');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

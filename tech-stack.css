@@ -1,0 +1,183 @@
+/* Global button rounding override */
+button, .btn, .cta-primary, .contact-btn {
+    border-radius: 50px !important;
+}
+/* Tech Stack page specific styles. Reuses global tokens from style.css */
+
+/* Page Hero */
+.page-hero {
+    padding-top: 120px; /* account for fixed header */
+    padding-bottom: 48px;
+    background:
+        radial-gradient(ellipse at top left, rgba(255, 69, 0, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(255, 140, 0, 0.15) 0%, transparent 60%),
+        linear-gradient(135deg, #1a1a1a 0%, #2d1b0e 50%, #1a1a1a 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.page-hero__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 6vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.page-hero__subtitle {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Stack Layout */
+.stack {
+    padding: 64px 0 96px 0;
+}
+
+.stack-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+}
+
+.stack-tabs .category-item {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stack-content .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.stack .tech-card h3::before {
+    content: '';
+}
+
+/* Tech Logo Styles */
+.tech-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: 60px;
+}
+
+.tech-logo img {
+    max-width: 48px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-card:hover .tech-logo img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+    .tech-logo {
+        height: 50px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .tech-logo img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .stack-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer spacing harmony for embedded testimonial */
+footer .client-feedback {
+    margin: 40px auto 64px auto;
+}
+
+/* Guarantees Section */
+.guarantees {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.guarantees__header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.guarantees__header h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.guarantees__header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.guarantees__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guarantee-card {
+    background: var(--light-color);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.guarantee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.guarantee-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.guarantee-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .guarantees__header h2 {
+        font-size: 2rem;
+    }
+    
+    .guarantees__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .guarantee-card {
+        padding: 1.5rem;
+    }
+}
+
+
+
