@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Development Services - Leanweave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ios-services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                    <img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+                        <div class="mega-menu" id="techStackMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="frontend">Front-end</a>
+                                    <a href="#" class="category-item" data-category="backend">Back-end</a>
+                                    <a href="#" class="category-item" data-category="mobile">Mobile</a>
+                                </div>
+
+                                <!-- Front-end Technologies -->
+                                <div class="category-content active" id="frontend">
+                                    <div class="content-header">
+                                        <h2>Front-end Development</h2>
+                                        <p>Create stunning user interfaces with modern front-end technologies</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="frontend-services.html" class="tech-card">
+                                            <h3>Front-end Development</h3>
+                                            <p>Leanweave crafts sleek, high-performance interfaces that make your brand
+                                                stand out and your users stay engaged.</p>
+                                        </a>
+                                        <a href="angular-services.html" class="tech-card">
+                                            <h3>Angular</h3>
+                                            <p>Delivering scalable, future-ready web applications with precision and
+                                                adaptability.</p>
+                                        </a>
+                                        <a href="react-services.html" class="tech-card">
+                                            <h3>React</h3>
+                                            <p>Creating fast, dynamic, and resilient front-end solutions tailored to
+                                                your vision.</p>
+                                        </a>
+                                        <a href="vue-services.html" class="tech-card">
+                                            <h3>Vue</h3>
+                                            <p>Building responsive, intuitive, and delightfully smooth user experiences.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Back-end Technologies -->
+                                <div class="category-content" id="backend">
+                                    <div class="content-header">
+                                        <h2>Back-end Development</h2>
+                                        <p>Robust server-side solutions with scalable architectures</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="backend-services.html" class="tech-card">
+                                            <h3>Back-end Development</h3>
+                                            <p>Leanweave's expert engineers design secure, scalable, and
+                                                high-performance systems that power your business from the inside out.
+                                            </p>
+                                        </a>
+                                        <a href="java-services.html" class="tech-card">
+                                            <h3>Java</h3>
+                                            <p>Developing enterprise-grade applications built for stability and
+                                                longevity.</p>
+                                        </a>
+                                        <a href="dotnet-services.html" class="tech-card">
+                                            <h3>.NET</h3>
+                                            <p>Delivering seamless, reliable, and future-ready solutions with .NET
+                                                expertise.</p>
+                                        </a>
+                                        <a href="php-services.html" class="tech-card">
+                                            <h3>PHP</h3>
+                                            <p>Creating dynamic, versatile, and business-focused web applications.</p>
+                                        </a>
+                                        <a href="python-services.html" class="tech-card">
+                                            <h3>Python</h3>
+                                            <p>Driving innovation through Python's adaptability and robust ecosystem.
+                                            </p>
+                                        </a>
+                                        <a href="nodejs-services.html" class="tech-card">
+                                            <h3>Node</h3>
+                                            <p>Building lightning-fast, scalable, and real-time applications with
+                                                Node.js.</p>
+                                        </a>
+                                        <a href="ruby-services.html" class="tech-card">
+                                            <h3>Ruby</h3>
+                                            <p>Crafting elegant, efficient, and maintainable back-end solutions.</p>
+                                        </a>
+                                        <a href="golang-services.html" class="tech-card">
+                                            <h3>Golang</h3>
+                                            <p>Engineering high-performance systems with speed and precision.</p>
+                                        </a>
+                                        <a href="scala-services.html" class="tech-card">
+                                            <h3>Scala</h3>
+                                            <p>Developing scalable, functional, and future-proof applications.</p>
+                                        </a>
+                                        <a href="rust-services.html" class="tech-card">
+                                            <h3>Rust</h3>
+                                            <p>Ensuring unmatched safety, performance, and reliability.</p>
+                                        </a>
+                                        <a href="c-cpp-services.html" class="tech-card">
+                                            <h3>C/C++</h3>
+                                            <p>Delivering powerful, high-efficiency systems with C and C++.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Technologies -->
+                                <div class="category-content" id="mobile">
+                                    <div class="content-header">
+                                        <h2>Mobile Development</h2>
+                                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="mobileapp-services.html" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Designing native, cross-platform, and progressive apps that deliver
+                                                flawless performance everywhere.</p>
+                                        </a>
+                                        <a href="android-services.html" class="tech-card">
+                                            <h3>Android</h3>
+                                            <p>Crafting seamless, user-focused Android experiences that inspire
+                                                engagement.</p>
+                                        </a>
+                                        <a href="ios-services.html" class="tech-card">
+                                            <h3>iOS</h3>
+                                            <p>Building sleek, high-performance iOS applications with precision and
+                                                style.</p>
+                                        </a>
+                                        <a href="reactnative-services.html" class="tech-card">
+                                            <h3>React Native</h3>
+                                            <p>Creating efficient, cross-platform apps with React Native's power and
+                                                versatility.</p>
+                                        </a>
+                                        <a href="flutter-services.html" class="tech-card">
+                                            <h3>Flutter</h3>
+                                            <p>Transforming app ideas into reality with Flutter's speed, flexibility,
+                                                and elegance.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown" data-menu="services">Services</a>
+                        <div class="mega-menu" id="servicesMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="ai-data">AI & Data</a>
+                                    <a href="#" class="category-item" data-category="app-dev">Application
+                                        Development</a>
+                                    <a href="#" class="category-item" data-category="cloud">Cloud</a>
+                                    <a href="#" class="category-item" data-category="cybersecurity">Cybersecurity</a>
+                                    <a href="#" class="category-item" data-category="engineering">Engineering</a>
+                                    <a href="#" class="category-item" data-category="enterprise-apps">Enterprise
+                                        Applications</a>
+                                    <a href="#" class="category-item" data-category="staff-augmentation">Staff
+                                        Augmentation</a>
+                                    <a href="#" class="category-item" data-category="support-services">Support
+                                        Services</a>
+                                </div>
+
+                                <!-- Services: AI & Data -->
+                                <div class="category-content active" id="ai-data">
+                                    <div class="content-header">
+                                        <h2>AI & Data</h2>
+                                        <p>Unlock intelligence with ML, analytics, and data engineering.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="Services/ai-services.html" class="tech-card">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Design and deploy ML/GenAI solutions that create measurable impact.</p>
+                                        </a>
+                                        <a href="Services/ai-consulting.html" class="tech-card">
+                                            <h3>AI Consulting Services</h3>
+                                            <p>Strategy, roadmaps, and PoCs to accelerate AI adoption safely.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>AI tools for business transformation</h3>
+                                            <p>Automations, copilots, and analytics products tailored to workflows.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Data Science</h3>
+                                            <p>Predictive modeling, experimentation, and decision intelligence.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Database creation and management</h3>
+                                            <p>Schema design, performance tuning, backups, and data governance.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Application Development -->
+                                <div class="category-content" id="app-dev">
+                                    <div class="content-header">
+                                        <h2>Application Development</h2>
+                                        <p>Design, build, and modernize web and mobile applications.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Native iOS/Android and cross-platform apps with intuitive UX.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Web Development</h3>
+                                            <p>Responsive, performant web apps with modern frameworks.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cross-platform development</h3>
+                                            <p>Shared codebases using React Native, Flutter, and more.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>PWA development</h3>
+                                            <p>Installable, offline-ready progressive web applications.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CMS-based web development</h3>
+                                            <p>Headless and traditional CMS solutions for faster delivery.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Cloud -->
+                                <div class="category-content" id="cloud">
+                                    <div class="content-header">
+                                        <h2>Cloud</h2>
+                                        <p>Migrate, optimize, and operate on AWS, Azure, and GCP.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Cloud Development</h3>
+                                            <p>Design and build cloud-native apps using serverless and containers.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cloud Migration</h3>
+                                            <p>Plan and execute secure migrations with minimal downtime.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>AWS</h3>
+                                            <p>Architecture, IaC, and operations on Amazon Web Services.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Cybersecurity -->
+                                <div class="category-content" id="cybersecurity">
+                                    <div class="content-header">
+                                        <h2>Cybersecurity</h2>
+                                        <p>Protect apps and infrastructure with proactive security.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Secure SDLC for mobile apps, code reviews, and hardening.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Web Development</h3>
+                                            <p>OWASP-focused engineering, threat modeling, and secure coding.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cross-platform development</h3>
+                                            <p>Security baselines across shared codebases and frameworks.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>PWA development</h3>
+                                            <p>Best practices for storage, service workers, and auth flows.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CMS-based web development</h3>
+                                            <p>Hardened CMS setups, least-privilege access, and monitoring.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Engineering -->
+                                <div class="category-content" id="engineering">
+                                    <div class="content-header">
+                                        <h2>Engineering</h2>
+                                        <p>Architecture, performance, and platform engineering services.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Engineering</h3>
+                                            <p>Solution design, architecture reviews, and delivery excellence.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Project Development Services</h3>
+                                            <p>End-to-end implementation with clear milestones and KPIs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Legacy modernization</h3>
+                                            <p>Re-architecture, refactoring, and replatforming with minimal risk.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>DevOps Services</h3>
+                                            <p>CI/CD, observability, SRE practices, and platform automation.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Integration Architecture Audit and Consulting</h3>
+                                            <p>Assess, optimize, and secure integrations across systems.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Custom Software Development</h3>
+                                            <p>Tailored solutions aligned to business outcomes.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">IoT development</h3>
+                                            <p>Device, edge, and cloud solutions with secure connectivity.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">Quality Assurance Services</h3>
+                                            <p>Automation, performance testing, and QA governance.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>API integration</h3>
+                                            <p>Reliable APIs and integrations with robust contracts.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>SaaS</h3>
+                                            <p>Multi-tenant architecture, provisioning, and lifecycle management.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Enterprise Applications -->
+                                <div class="category-content" id="enterprise-apps">
+                                    <div class="content-header">
+                                        <h2>Enterprise Applications</h2>
+                                        <p>ERP, CRM, and integrations tailored for your business.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>SAP</h3>
+                                            <p>Implementation, customization, and integration across SAP modules.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Salesforce</h3>
+                                            <p>Sales, Service, and custom clouds with robust integrations.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CRM Consulting Services</h3>
+                                            <p>Evaluate, design, and optimize CRM processes and data models.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Creatio CRM Implementation</h3>
+                                            <p>Low-code CRM deployments tailored to your workflows.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Staff Augmentation -->
+                                <div class="category-content" id="staff-augmentation">
+                                    <div class="content-header">
+                                        <h2>Staff Augmentation</h2>
+                                        <p>Scale your team rapidly with vetted engineering talent.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Staff Augmentation</h3>
+                                            <p>Flexible talent to extend your in-house capabilities fast.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Dedicated Team</h3>
+                                            <p>Autonomous squads aligned to outcomes and roadmaps.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>UI/UX Design Services</h3>
+                                            <p>Research, design systems, and prototyping to ship great UX.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Business Analysis</h3>
+                                            <p>Requirements, process mapping, and value-focused backlogs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Solution Architecture</h3>
+                                            <p>Blueprints and governance for scalable, secure systems.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Project Management</h3>
+                                            <p>Agile delivery, risk management, and stakeholder alignment.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Marketing</h3>
+                                            <p>Growth support with product marketing and launch enablement.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Discovery Phase</h3>
+                                            <p>Workshops, scope, and prototypes to de-risk delivery.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Startups and MVPs</h3>
+                                            <p>Lean builds from idea to traction with fast iterations.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Support Services -->
+                                <div class="category-content" id="support-services">
+                                    <div class="content-header">
+                                        <h2>Support Services</h2>
+                                        <p>24/7 maintenance, SRE, and L1–L3 production support.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Maintenance and Support Services</h3>
+                                            <p>Continuous improvements, bug fixes, and stability enhancements.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>IT Help Desk Services</h3>
+                                            <p>Multi-level support with clear SLAs and rapid resolution.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">Salesforce Support Services</h3>
+                                            <p>Admin, enhancements, and user support for Salesforce orgs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Atlassian Support Services</h3>
+                                            <p>Jira/Confluence admin, workflows, and performance tuning.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word">iOS</span><br>
+                    <span class="word">Development...</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Create premium iOS applications with Apple's latest technologies and design principles.
+                    We deliver sophisticated, user-centric mobile experiences that seamlessly integrate
+                    with the Apple ecosystem.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn--primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="statistics-grid">
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years on Market</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">28+</div>
+                <div class="stat-label">iOS Developers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Delivered Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iOS Development Services Section -->
+    <section class="ios-services-section">
+        <div class="container">
+            <div class="services-header">
+                <h2>iOS Development Services</h2>
+                <p>Premium iOS development solutions crafted for the Apple ecosystem. From native apps to enterprise
+                    solutions, we deliver exceptional iOS experiences that users love.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Native iOS Development</h3>
+                    <p>Build premium native iOS applications using Swift and modern iOS frameworks with Apple's latest
+                        design guidelines and performance standards.</p>
+                    <ul class="service-features">
+                        <li>Swift & Objective-C development</li>
+                        <li>Human Interface Guidelines compliance</li>
+                        <li>MVC & MVVM architectures</li>
+                        <li>Core Data & CloudKit integration</li>
+                        <li>Performance optimization</li>
+                    </ul>
+
+                </div>
+
+                <div class="service-card">
+                    <h3>iOS Consulting Services</h3>
+                    <p>Expert guidance on iOS architecture, Apple ecosystem integration, and App Store optimization to
+                        ensure your app's success.</p>
+                    <ul class="service-features">
+                        <li>iOS architecture review</li>
+                        <li>Apple ecosystem integration</li>
+                        <li>Performance optimization</li>
+                        <li>App Store optimization</li>
+                        <li>Apple guidelines compliance</li>
+                    </ul>
+
+                </div>
+
+                <div class="service-card">
+                    <h3>iOS App Modernization</h3>
+                    <p>Update your existing iOS applications with the latest iOS features, Swift migration, and modern
+                        design patterns.</p>
+                    <ul class="service-features">
+                        <li>Swift migration services</li>
+                        <li>iOS version updates</li>
+                        <li>UI/UX modernization</li>
+                        <li>Performance improvements</li>
+                        <li>New iOS features integration</li>
+                    </ul>
+
+                </div>
+
+                <div class="service-card">
+                    <h3>iOS Team Augmentation</h3>
+                    <p>Extend your development capacity with experienced iOS developers who understand Apple's ecosystem
+                        and development best practices.</p>
+                    <ul class="service-features">
+                        <li>Senior iOS developers</li>
+                        <li>Swift & Objective-C experts</li>
+                        <li>iOS UI/UX specialists</li>
+                        <li>Apple platform engineers</li>
+                        <li>QA automation specialists</li>
+                    </ul>
+
+                </div>
+
+                <div class="service-card">
+                    <h3>Enterprise iOS Solutions</h3>
+                    <p>Comprehensive iOS development for enterprise clients with dedicated teams, enterprise security,
+                        and Apple Business Manager integration.</p>
+                    <ul class="service-features">
+                        <li>Dedicated iOS team</li>
+                        <li>Enterprise security standards</li>
+                        <li>Apple Business Manager</li>
+                        <li>Custom enterprise features</li>
+                        <li>Ongoing support & maintenance</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology set Section -->
+    <section class="techset">
+        <div class="container">
+            <div class="techset__header">
+                <h2>iOS Technology Stack</h2>
+                <p>Harness the power of Apple's cutting-edge technologies and frameworks. We build sophisticated iOS
+                    applications using the latest tools and best practices from the Apple ecosystem.</p>
+            </div>
+
+            <div class="techset__tabs" role="tablist">
+                <button class="techset__tab active" data-tech-panel="languages" role="tab"
+                    aria-selected="true">Languages</button>
+                <button class="techset__tab" data-tech-panel="frameworks" role="tab"
+                    aria-selected="false">Frameworks</button>
+                <button class="techset__tab" data-tech-panel="architecture" role="tab"
+                    aria-selected="false">Architecture</button>
+                <button class="techset__tab" data-tech-panel="tools" role="tab" aria-selected="false">Tools</button>
+                <button class="techset__tab" data-tech-panel="testing" role="tab" aria-selected="false">Testing</button>
+                <button class="techset__tab" data-tech-panel="services" role="tab"
+                    aria-selected="false">Services</button>
+            </div>
+
+            <div class="techset__content">
+                <!-- Languages Panel -->
+                <div class="techset__panel active" id="languages" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+                                alt="Swift">
+                            <h3>Swift</h3>
+                            <p>Apple's powerful and intuitive programming language for iOS development.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">Obj-C</div>
+                            <h3>Objective-C</h3>
+                            <p>Legacy iOS development language for maintaining existing applications.</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C/C++">
+                            <h3>C/C++</h3>
+                            <p>Low-level programming for performance-critical iOS components.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks Panel -->
+                <div class="techset__panel" id="frameworks" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">UIKit</div>
+                            <h3>UIKit</h3>
+                            <p>Apple's fundamental framework for building iOS user interfaces.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">SwiftUI</div>
+                            <h3>SwiftUI</h3>
+                            <p>Modern declarative UI framework for building iOS interfaces.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">CoreData</div>
+                            <h3>Core Data</h3>
+                            <p>Apple's framework for managing object relationships and persistence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture Panel -->
+                <div class="techset__panel" id="architecture" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">MVC</div>
+                            <h3>MVC Pattern</h3>
+                            <p>Model-View-Controller architecture pattern recommended by Apple.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">MVVM</div>
+                            <h3>MVVM Pattern</h3>
+                            <p>Model-View-ViewModel for reactive and testable iOS applications.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">VIPER</div>
+                            <h3>VIPER Architecture</h3>
+                            <p>View-Interactor-Presenter-Entity-Router for scalable iOS apps.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Panel -->
+                <div class="techset__panel" id="tools" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
+                                alt="Xcode">
+                            <h3>Xcode</h3>
+                            <p>Apple's integrated development environment for iOS development.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">CocoaPods</div>
+                            <h3>CocoaPods</h3>
+                            <p>Dependency manager for Swift and Objective-C projects.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">SPM</div>
+                            <h3>Swift Package Manager</h3>
+                            <p>Apple's official dependency management tool for Swift.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Panel -->
+                <div class="techset__panel" id="testing" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">XCTest</div>
+                            <h3>XCTest</h3>
+                            <p>Apple's testing framework for unit and integration testing.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">UI Tests</div>
+                            <h3>UI Testing</h3>
+                            <p>Automated UI testing framework for iOS applications.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">Instruments</div>
+                            <h3>Instruments</h3>
+                            <p>Apple's performance analysis and debugging tool.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Panel -->
+                <div class="techset__panel" id="services" role="tabpanel">
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">CloudKit</div>
+                            <h3>CloudKit</h3>
+                            <p>Apple's cloud service framework for iOS data synchronization.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">Push</div>
+                            <h3>Push Notifications</h3>
+                            <p>Apple Push Notification service for real-time messaging.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">In-App</div>
+                            <h3>In-App Purchases</h3>
+                            <p>StoreKit framework for monetization and subscriptions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Ready to Start Your iOS Project?</h2>
+            <p>Let's discuss how we can help bring your iOS app vision to life.</p>
+            <div class="contact-buttons">
+                <a href="#" class="btn--primary">Get A Quote</a>
+                <a href="#" class="btn btn--primary">Schedule a Call</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Client Feedback Section -->
+    <section class="client-feedback">
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <h2 class="feedback-title">Client Feedback</h2>
+                <p class="feedback-subtitle">Leanweave transformed our vision into reality!</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"The team's attention to detail is unmatched. They exceeded our
+                        expectations!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">AJ</div>
+                        <div class="client-details">
+                            <div class="client-name">Alice Johnson</div>
+                            <div class="client-title">Project Manager, TechCorp</div>
+                        </div>
+                        <div class="company-logo">
+                            <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    
+                                </svg> -->
+                            <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg"
+                                alt="Matha Hospital">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="stars">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Working with Leanweave was a game changer for us. Their expertise is
+                        evident in every aspect of the project!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">MS</div>
+                        <div class="client-details">
+                            <div class="client-name">Mark Smith</div>
+                            <div class="client-title">CEO, InnovateX</div>
+                        </div>
+                        <div class="company-logo">
+                            <img class="company-logo" src="images/testimonial 1/logo/Ceph.svg" alt="Ceph">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <div class="nav-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="nav-arrows">
+                    <div class="nav-arrow">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                    <div class="nav-arrow">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h3>Trusted by leading companies</h3>
+            </div>
+            <div class="clients__logos">
+                <img src="logos/Trusted by leading companies logos/Ceph.svg" alt="Ceph Logo">
+                <img src="logos/Trusted by leading companies logos/Matha_Hospital.svg" alt="Matha Hospital Logo">
+                <img src="logos/Trusted by leading companies logos/Tata Steel.svg" alt="Tata Steel Logo">
+                <img src="logos/Trusted by leading companies logos/Nestle-Logo.svg" alt="Nestle Logo">
+                <img src="logos/Trusted by leading companies logos/pirelli-logo.svg" alt="Pirelli Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="main-footer">
+        <div class="main-footer_container">
+            <!-- CTA Section -->
+            <div class="footer__cta">
+                <div class="footer__cta-overlay">
+                    <h2>Get Your Free Consultation Today</h2>
+                    <p>Ready to elevate your project? Our expert developers are here to help you succeed.</p>
+                    <div class="footer__cta-buttons">
+                        <a href="#" class="btn btn--primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links Grid -->
+            <div class="footer__content">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Tech Stack</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Back-end</a></li>
+                            <li><a href="#">Front-end</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">PHP</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Industries We Serve</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Financial Services</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">Logistics</a></li>
+                            <li><a href="#">Travel & Hospitality</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Media & Entertainment</a></li>
+                            <li><a href="#">Telecom</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">iGaming</a></li>
+                            <li><a href="#">Retail</a></li>
+                            <li><a href="#">Nonprofit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Our Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Quality Assurance</a></li>
+                            <li><a href="#">Staff Augmentation</a></li>
+                            <li><a href="#">Project Development Services</a></li>
+                            <li><a href="#">Dedicated Team</a></li>
+                            <li><a href="#">Engineering</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">DevOps Services</a></li>
+                            <li><a href="#">Business Analysis</a></li>
+                            <li><a href="#">Solution Architecture</a></li>
+                            <li><a href="#">IoT Development Services</a></li>
+                            <li><a href="#">Startups & MVP Services</a></li>
+                            <li><a href="#">SaaS</a></li>
+                            <li><a href="#">Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">GTC</a></li>
+                            <li><a href="#">GTC for Consultancy services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <div class="footer__logo">
+                        <img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+                    </div>
+
+                    <div class="footer__nav">
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <div class="copyright-links">
+                    <span>© 2025 Leanweave. All rights reserved.</span>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="js/shared-components.js"></script>
+    <script src="ios-services.js"></script>
+</body>
+
+</html>

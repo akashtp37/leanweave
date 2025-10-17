@@ -435,13 +435,9 @@ button, .btn, .cta-primary, .contact-btn {
 .techset__header h2::after { content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 4px; background: linear-gradient(90deg, #4F5B93, #8B9DC3); border-radius: 2px; }
 .techset__header p { color: #666; line-height: 1.7; }
 
+/* Use global Android-style techset tabs from style.css */
 .techset__tabs { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; position: relative; }
 .techset__tabs::after { content: ''; position: absolute; bottom: -10px; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); }
-.techset__tab { background: var(--light-color); border: 2px solid #e0e0e0; border-radius: 999px; padding: 1rem 2rem; font-weight: 600; cursor: pointer; transition: all .3s ease; font-size: .9rem; text-transform: uppercase; letter-spacing: .5px; position: relative; overflow: hidden; }
-.techset__tab:hover { border-color: #4F5B93; color: #4F5B93; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79, 91, 147, 0.15); }
-.techset__tab.active { background: linear-gradient(135deg, #4F5B93, #8B9DC3); color: var(--light-color); border-color: #4F5B93; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(79, 91, 147, 0.25); }
-.techset__tab.active::after { content: ''; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 80%; height: 3px; background: #6495ED; border-radius: 2px; }
-.techset__tab:focus-visible { outline: 3px solid rgba(79, 91, 147, 0.35); outline-offset: 2px; }
 
 .techset__carousel { position: relative; }
 .techset__nav { position: absolute; top: 50%; transform: translateY(-50%); background: #fff; border: 1px solid #e5e7eb; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; z-index: 2; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }

@@ -29,6 +29,35 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Prevent horizontal scroll on narrow viewports */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Hide webkit scrollbars */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* For IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* Offset main content for fixed header */
+main {
+    padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    main { padding-top: 72px; }
+}
+
 body {
     /* font-family: var(--font-family);
     line-height: 1.6;
@@ -174,14 +203,17 @@ img {
 /* -- HEADER & NAV ---- */
 /* -------------------- */
  .main-header {
-            background: var(--light-color);
+            background: rgba(255, 255, 255, 0.85);
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .header-container {
@@ -308,22 +340,24 @@ img {
 
         /* Improved Mega Menu Styles */
         .mega-menu {
-            position: absolute;
-            top: 100%;
+            position: fixed;
+            top: var(--header-height, 80px);
             left: 50%;
-            transform: translateX(-50%);
-            width: 95vw;
-            max-width: 1200px;
-            background: var(--light-color);
+            transform: translateX(-50%) translateY(-10px);
+            width: calc(100vw - 4rem);
+            max-width: 1400px;
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: var(--shadow);
             opacity: 0;
             visibility: hidden;
-            transform: translateX(-50%) translateY(-10px);
             transition: all 0.3s ease;
             border-top: 3px solid var(--primary-color);
             border-radius: 12px;
             overflow: hidden;
             margin: 0 auto;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
         }
 
         .mega-menu.active {
@@ -559,7 +593,7 @@ img {
         /* Responsive Design */
         @media (max-width: 1200px) {
             .mega-menu {
-                width: 98vw;
+                width: calc(100vw - 4rem);
             }
             
             .mega-container {
@@ -593,13 +627,15 @@ img {
                 left: 0;
                 width: 100%;
                 height: calc(100vh - 80px);
-                background: var(--light-color);
+                background: rgba(255, 255, 255, 0.9);
                 flex-direction: column;
                 align-items: stretch;
                 padding: 2rem;
                 transform: translateX(-100%);
                 transition: transform 0.3s ease;
                 overflow-y: auto;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
 
             .nav-menu.active {
@@ -720,7 +756,7 @@ img {
 /* ------ HERO -------- */
 /* -------------------- */
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     background:
         radial-gradient(ellipse at top left, #ff4500 0%, transparent 60%),
         radial-gradient(ellipse at bottom right, #ff8c00 0%, transparent 60%),
@@ -864,10 +900,10 @@ img {
     display: inline-block;
 }
 
-.cta-primary:hover {
+/* .cta-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
-}
+} */
 
 .cta-primary::before {
     content: '';
@@ -1002,6 +1038,7 @@ img {
         text-align: center;
         padding: 2rem 5%;
         gap: 3rem;
+        min-height: calc(100vh - 72px);
     }
     
     .hero-container {
@@ -1124,7 +1161,7 @@ section {
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   text-align: center;
 }
@@ -1212,6 +1249,8 @@ section {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .stat-item h3 {
@@ -1223,6 +1262,12 @@ section {
     color: #000;
     font-size: 1rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .stat-item h3 { font-size: 2.25rem; }
+    .stat-item p { font-size: 0.95rem; }
+    .stats { padding: 3.5rem 0; }
 }
 
 
@@ -2087,7 +2132,7 @@ section {
 
 @media (max-width: 768px) {
     .footer__cta {
-        padding: 3rem 0;
+        padding: 2.5rem 1rem;
         margin-bottom: 3rem;
     }
     
@@ -2311,4 +2356,165 @@ section {
 /* Global button rounding override */
 button, .btn, .cta-primary, .contact-btn {
     border-radius: 50px !important;
+}
+
+/* ----------------------------- */
+/* Android Techset design global */
+/* ----------------------------- */
+/* Techset section container */
+.techset {
+    padding: 100px 0;
+    background: white;
+}
+
+.techset__header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.techset__header h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.techset__header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.techset__tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1rem;
+}
+
+.techset__tab {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.techset__tab.active,
+.techset__tab:hover {
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.techset__tab:focus-visible {
+    outline: 3px solid rgba(255, 107, 53, 0.25);
+    outline-offset: 2px;
+}
+
+.techset__panel { display: none; }
+.techset__panel.active { display: block; }
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover { transform: translateY(-3px); }
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.tech-item h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.tech-item p {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ----------------------------- */
+/* Back-end Scope tabs styling   */
+/* ----------------------------- */
+.scope-section .be-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1rem;
+}
+
+.scope-section .be-tab {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.scope-section .be-tab:hover,
+.scope-section .be-tab.active {
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.scope-section .be-panel {
+    background: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+    .tech-grid { grid-template-columns: 1fr; }
 }

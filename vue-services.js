@@ -1,4 +1,4 @@
-// Vue Services Page JavaScript
+// Angular Services Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
 	// Tab switching functionality
@@ -18,6 +18,55 @@ document.addEventListener('DOMContentLoaded', function() {
 			document.getElementById(targetTab).classList.add('active');
 		});
 	});
+
+	// Testimonial slider functionality
+	const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+	const testimonialDots = document.querySelectorAll('.dot');
+	let currentSlide = 0;
+	let slideInterval;
+
+	function showSlide(index) {
+		testimonialSlides.forEach((slide, i) => {
+			slide.classList.toggle('active', i === index);
+		});
+		
+		testimonialDots.forEach((dot, i) => {
+			dot.classList.toggle('active', i === index);
+		});
+	}
+
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % testimonialSlides.length;
+		showSlide(currentSlide);
+	}
+
+	function startAutoSlide() {
+		slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+	}
+
+	function stopAutoSlide() {
+		clearInterval(slideInterval);
+	}
+
+	// Dot navigation
+	testimonialDots.forEach((dot, index) => {
+		dot.addEventListener('click', () => {
+			currentSlide = index;
+			showSlide(currentSlide);
+			stopAutoSlide();
+			startAutoSlide(); // Restart auto-slide
+		});
+	});
+
+	// Pause auto-slide on hover
+	const testimonialSlider = document.querySelector('.testimonial-slider');
+	if (testimonialSlider) {
+		testimonialSlider.addEventListener('mouseenter', stopAutoSlide);
+		testimonialSlider.addEventListener('mouseleave', startAutoSlide);
+	}
+
+	// Start auto-slide
+	startAutoSlide();
 
 	// Request Services button functionality
 	const requestButtons = document.querySelectorAll('.request-services-btn');
@@ -103,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}, observerOptions);
 
 	// Observe elements for animation (do not hide elements already in viewport)
-	const animatedElements = document.querySelectorAll('.scope-panel, .stat-card');
+	const animatedElements = document.querySelectorAll('.scope-panel, .stat-card, .testimonial-slide');
 	animatedElements.forEach(el => {
 		el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
 		if (isInViewport(el)) {

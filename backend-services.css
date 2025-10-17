@@ -209,20 +209,21 @@ button,
 	background: linear-gradient(180deg, transparent, #e0e0e0, transparent);
 }
 
+/* Use global Android-style tab visuals with enhanced smoothness */
 .be-tab {
-	text-align: left;
-	background: var(--light-color);
-	border: 2px solid #e0e0e0;
-	border-radius: 999px;
-	padding: 1rem 2rem;
-	font-weight: 600;
-	font-family: 'Inter', sans-serif;
-	cursor: pointer;
-	transition: all .3s ease;
-	text-transform: uppercase;
-	letter-spacing: .5px;
-	position: relative;
-	overflow: hidden;
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateZ(0);
+    will-change: transform, background-color, color;
 }
 
 .be-tab::before {
@@ -232,44 +233,62 @@ button,
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
-	transition: left .5s ease;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3), transparent);
+	transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: 1;
+}
+
+.be-tab::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 107, 53, 0.05);
+	opacity: 0;
+	transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: 0;
 }
 
 .be-tab:hover::before {
 	left: 100%;
 }
 
+.be-tab:hover::after {
+	opacity: 1;
+}
+
 .be-tab:hover {
-	border-color: var(--primary-color);
-	color: var(--primary-color);
-	transform: translateX(2px);
-	box-shadow: 0 4px 12px rgba(255, 107, 53, 0.15);
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.08);
+    transform: translateX(4px) translateZ(0);
 }
 
 .be-tab.active {
-	background: linear-gradient(135deg, var(--primary-color), #ff8c00);
-	color: var(--light-color);
-	border-color: var(--primary-color);
-	transform: translateX(2px);
-	box-shadow: 0 6px 20px rgba(255, 107, 53, 0.25);
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.12);
+    transform: translateX(6px) translateZ(0);
 }
 
 .be-tab.active::after {
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 80%;
-	height: 3px;
-	background: #ffd700;
-	border-radius: 2px;
+	opacity: 1;
+	background: rgba(255, 107, 53, 0.08);
 }
 
 .be-tab:focus-visible {
 	outline: 3px solid rgba(255, 140, 0, 0.35);
 	outline-offset: 2px;
+}
+
+.be-tab:active {
+	transform: translateX(2px) translateZ(0) scale(0.98);
+	transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.be-tab:active::before {
+	left: 0;
+	transition: left 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .be-content {
@@ -278,22 +297,30 @@ button,
 
 .be-panel {
 	display: none;
-	animation: beFade .35s ease-out;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .be-panel.active {
 	display: block;
+	opacity: 1;
+	transform: translateY(0);
+	animation: beFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-@keyframes beFade {
-	from {
+@keyframes beFadeIn {
+	0% {
 		opacity: 0;
-		transform: translateY(10px);
+		transform: translateY(20px) scale(0.98);
 	}
-
-	to {
+	50% {
+		opacity: 0.7;
+		transform: translateY(5px) scale(0.99);
+	}
+	100% {
 		opacity: 1;
-		transform: translateY(0);
+		transform: translateY(0) scale(1);
 	}
 }
 
@@ -431,11 +458,11 @@ button,
 
 /* Two-Column Layout for Capabilities */
 .capabilities-section .panel-layout {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 3rem;
-	align-items: start;
-	position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    position: relative;
 }
 
 .capabilities-section .panel-layout::before {
@@ -580,17 +607,20 @@ button,
 }
 
 .capabilities-section .tech-logos-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1.5rem;
-	width: 100%;
-	max-width: 400px;
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 16px;
-	padding: 1.5rem;
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
+
+/* Optional scrollbar refinement */
+.capabilities-section .tech-logos-grid::-webkit-scrollbar { width: 8px; }
+.capabilities-section .tech-logos-grid::-webkit-scrollbar-thumb { background: #e0e0e0; border-radius: 8px; }
+.capabilities-section .tech-logos-grid:hover::-webkit-scrollbar-thumb { background: #cfcfcf; }
 
 .capabilities-section .tech-logo {
 	display: flex;
@@ -688,12 +718,11 @@ button,
 		display: none;
 	}
 
-	.capabilities-section .tech-logos-grid {
-		max-width: 100%;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
-		padding: 1rem;
-	}
+    .capabilities-section .tech-logos-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        padding: 0.5rem;
+    }
 
 	.capabilities-header h2 {
 		font-family: 'Cabin', sans-serif;

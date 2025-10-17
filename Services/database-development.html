@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Database Development Services - Leanweave</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="database-development.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="header-container">
+			<nav class="main-nav">
+				<a href="../index.html" class="logo">
+					<img src="../logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
+				</a>
+
+				<ul class="nav-menu" id="navMenu">
+					<li class="nav-item">
+						<a href="../tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+						<div class="mega-menu" id="techStackMenu">
+							<button class="mega-close" onclick="closeMegaMenu()">×</button>
+							<div class="mega-container">
+								<div class="category-nav">
+									<a href="#" class="category-item active" data-category="frontend">Front-end</a>
+									<a href="#" class="category-item" data-category="backend">Back-end</a>
+									<a href="#" class="category-item" data-category="mobile">Mobile</a>
+								</div>
+
+								<div class="category-content active" id="frontend">
+									<div class="content-header">
+										<h2>Front-end Development</h2>
+										<p>Create stunning user interfaces with modern front-end technologies</p>
+									</div>
+									<div class="content-grid">
+										<a href="../frontend-services.html" class="tech-card">
+											<h3>Front-end Development</h3>
+											<p>Leanweave crafts sleek, high-performance interfaces that engage users.</p>
+										</a>
+										<a href="../react-services.html" class="tech-card">
+											<h3>React</h3>
+											<p>Fast, dynamic, and resilient front-end solutions tailored to your vision.</p>
+										</a>
+										<a href="../angular-services.html" class="tech-card">
+											<h3>Angular</h3>
+											<p>Scalable web applications with precision and adaptability.</p>
+										</a>
+										<a href="../vue-services.html" class="tech-card">
+											<h3>Vue</h3>
+											<p>Responsive, intuitive, and delightfully smooth user experiences.</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="category-content" id="backend">
+									<div class="content-header">
+										<h2>Back-end Development</h2>
+										<p>Robust server-side solutions with scalable architectures</p>
+									</div>
+									<div class="content-grid">
+										<a href="../backend-services.html" class="tech-card">
+											<h3>Back-end Development</h3>
+											<p>Secure, scalable, and high-performance systems.</p>
+										</a>
+										<a href="../python-services.html" class="tech-card">
+											<h3>Python</h3>
+											<p>Adaptable back-ends and data services with Python.</p>
+										</a>
+										<a href="../nodejs-services.html" class="tech-card">
+											<h3>Node</h3>
+											<p>Real-time, event-driven applications using Node.js.</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="category-content" id="mobile">
+									<div class="content-header">
+										<h2>Mobile Development</h2>
+										<p>Native and cross-platform mobile applications for iOS and Android</p>
+									</div>
+									<div class="content-grid">
+										<a href="../mobileapp-services.html" class="tech-card">
+											<h3>Mobile Development</h3>
+											<p>Designing native, cross-platform, and progressive apps.</p>
+										</a>
+										<a href="../android-services.html" class="tech-card">
+											<h3>Android</h3>
+											<p>Seamless, user-focused Android experiences.</p>
+										</a>
+										<a href="../ios-services.html" class="tech-card">
+											<h3>iOS</h3>
+											<p>Sleek, high-performance iOS applications.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="nav-link has-dropdown" data-menu="services">Services</a>
+						<div class="mega-menu" id="servicesMenu">
+							<button class="mega-close" onclick="closeMegaMenu()">×</button>
+							<div class="mega-container">
+								<div class="category-nav">
+									<a href="#" class="category-item active" data-category="ai-data">AI & Data</a>
+									<a href="#" class="category-item" data-category="engineering">Engineering</a>
+									<a href="#" class="category-item" data-category="enterprise-apps">Enterprise Applications</a>
+									<a href="#" class="category-item" data-category="support-services">Support Services</a>
+								</div>
+
+								<div class="category-content active" id="ai-data">
+									<div class="content-header">
+										<h2>AI & Data</h2>
+										<p>Unlock intelligence with ML, analytics, and data engineering.</p>
+									</div>
+									<div class="content-grid">
+										<a href="ai-services.html" class="tech-card">
+											<h3>Artificial Intelligence</h3>
+											<p>Design and deploy ML/GenAI solutions that create measurable impact.</p>
+										</a>
+										<a href="ai-consulting.html" class="tech-card">
+											<h3>AI Consulting Services</h3>
+											<p>Strategy, roadmaps, and PoCs to accelerate AI adoption.</p>
+										</a>
+										<a href="#" class="tech-card">
+											<h3>Data Engineering</h3>
+											<p>Reliable data pipelines and platforms for analytics and AI.</p>
+										</a>
+										<a href="database-development.html" class="tech-card">
+											<h3 class="highlight-underline">Database Development</h3>
+											<p>Schema design, performance tuning, backups, and governance.</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="category-content" id="engineering">
+									<div class="content-header">
+										<h2>Engineering</h2>
+										<p>Architecture, performance, and platform engineering services.</p>
+									</div>
+									<div class="content-grid">
+										<a href="#" class="tech-card">
+											<h3>Custom Software Development</h3>
+											<p>Tailored solutions aligned to business outcomes.</p>
+										</a>
+										<a href="#" class="tech-card">
+											<h3>DevOps Services</h3>
+											<p>CI/CD, observability, and platform automation.</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="category-content" id="enterprise-apps">
+									<div class="content-header">
+										<h2>Enterprise Applications</h2>
+										<p>ERP, CRM, and integrations tailored for your business.</p>
+									</div>
+									<div class="content-grid">
+										<a href="#" class="tech-card">
+											<h3>CRM Consulting Services</h3>
+											<p>Evaluate, design, and optimize CRM processes and data models.</p>
+										</a>
+										<a href="#" class="tech-card">
+											<h3>Creatio CRM Implementation</h3>
+											<p>Low-code CRM deployments tailored to workflows.</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="category-content" id="support-services">
+									<div class="content-header">
+										<h2>Support Services</h2>
+										<p>24/7 maintenance, SRE, and L1–L3 production support.</p>
+									</div>
+									<div class="content-grid">
+										<a href="#" class="tech-card">
+											<h3>Maintenance and Support Services</h3>
+											<p>Continuous improvements, fixes, and stability enhancements.</p>
+										</a>
+										<a href="#" class="tech-card">
+											<h3>IT Help Desk Services</h3>
+											<p>Multi-level support with clear SLAs and rapid resolution.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+				</ul>
+
+				<div class="mobile-toggle" id="mobileToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero-section">
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					<span class="word">Database</span><br>
+					<span class="word">Development Services</span>
+				</h1>
+				<p class="hero-subtitle">
+					Design, build, and operate reliable databases. We deliver resilient schemas, high-performance queries, automation, observability, and bulletproof backup/DR.
+				</p>
+				<div class="hero-buttons">
+					<a href="#contact" class="btn btn--primary">Talk to an Expert</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="statistics-section">
+		<div class="statistics-grid">
+			<div class="stat-card"><div class="stat-number">80+</div><div class="stat-label">Database specialists</div></div>
+			<div class="stat-card"><div class="stat-number">120+</div><div class="stat-label">delivered Database projects</div></div>
+			<div class="stat-card"><div class="stat-number">24/7</div><div class="stat-label">support</div></div>
+		</div>
+	</section>
+
+	<section class="lw-process-section">
+		<div class="container">
+			<div class="services-header">
+				<h2>How we deliver production-grade databases</h2>
+				<p>From data modeling to operations, our process ensures performance, security, and cost efficiency.</p>
+			</div>
+			<ol class="process-grid">
+				<li class="process-card"><h3>1. Requirements & modeling</h3><p>Workloads, access patterns, growth, and SLAs inform the data model.</p></li>
+				<li class="process-card"><h3>2. Architecture selection</h3><p>Choose the right engines, topology, and HA/DR approach for the job.</p></li>
+				<li class="process-card"><h3>3. Implementation</h3><p>Schema, indexing, migrations, seed data, and secure connectivity.</p></li>
+				<li class="process-card"><h3>4. Performance & reliability</h3><p>Query tuning, caching, observability, capacity planning, and chaos tests.</p></li>
+				<li class="process-card"><h3>5. Automation</h3><p>Backups, failover, maintenance windows, and IaC for repeatability.</p></li>
+				<li class="process-card"><h3>6. Handover & support</h3><p>Runbooks, training, SLOs, and ongoing optimization.</p></li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="techset" id="tech-stack">
+		<div class="container">
+			<div class="techset__header">
+				<h2>Tech stack for database projects</h2>
+				<p>We apply the right database for the job—balancing consistency, scalability, and operability.</p>
+			</div>
+			<div class="techset__tabs" role="tablist" aria-label="Database Tech Tabs">
+				<button class="techset__tab active" role="tab" aria-selected="true" aria-controls="panel-rdbms" id="tab-rdbms">RDBMS</button>
+				<button class="techset__tab" role="tab" aria-selected="false" aria-controls="panel-nosql" id="tab-nosql">NoSQL</button>
+			</div>
+			<div class="techset__panel active" role="tabpanel" id="panel-rdbms" aria-labelledby="tab-rdbms">
+				<div class="tech-grid">
+					<div class="tech-item"><div class="tech-icon">PG</div><h3>PostgreSQL</h3><p>Advanced SQL, strong consistency, extensions, and performance tuning.</p></div>
+					<div class="tech-item"><div class="tech-icon">MY</div><h3>MySQL</h3><p>OLTP workhorses with replication, InnoDB, and managed offerings.</p></div>
+					<div class="tech-item"><div class="tech-icon">MS</div><h3>SQL Server</h3><p>Enterprise features, BI integrations, and hybrid deployments.</p></div>
+					<div class="tech-item"><div class="tech-icon">OR</div><h3>Oracle</h3><p>Mission-critical workloads, partitioning, and robust tooling.</p></div>
+				</div>
+			</div>
+			<div class="techset__panel" role="tabpanel" id="panel-nosql" aria-labelledby="tab-nosql">
+				<div class="tech-grid">
+					<div class="tech-item"><div class="tech-icon">MO</div><h3>MongoDB</h3><p>Document models for developer velocity and flexible schemas.</p></div>
+					<div class="tech-item"><div class="tech-icon">RD</div><h3>Redis</h3><p>In-memory data, caching, streams, and real-time leaderboards.</p></div>
+					<div class="tech-item"><div class="tech-icon">ES</div><h3>Elasticsearch</h3><p>Search, analytics, and observability at scale.</p></div>
+					<div class="tech-item"><div class="tech-icon">CS</div><h3>Cassandra</h3><p>Wide-column storage for high write throughput and availability.</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="clients">
+		<div class="container">
+			<div class="section-header">
+				<h3>Trusted by leading companies</h3>
+			</div>
+			<div class="clients__logos">
+				<img src="../logos/Trusted by leading companies logos/Ceph.svg" alt="Ceph Logo">
+				<img src="../logos/Trusted by leading companies logos/Matha_Hospital.svg" alt="Matha Hospital Logo">
+				<img src="../logos/Trusted by leading companies logos/Tata Steel.svg" alt="Tata Steel Logo">
+				<img src="../logos/Trusted by leading companies logos/Nestle-Logo.svg" alt="Nestle Logo">
+				<img src="../logos/Trusted by leading companies logos/pirelli-logo.svg" alt="Pirelli Logo">
+			</div>
+		</div>
+	</section>
+
+	<footer id="contact" class="main-footer">
+		<div class="main-footer_container">
+			<div class="footer__cta">
+				<div class="footer__cta-overlay">
+					<h2>Get Your Free Consultation Today</h2>
+					<p>Ready to elevate your data platform? Our database experts can help.</p>
+					<div class="footer__cta-buttons">
+						<a href="#" class="btn btn--primary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__content">
+				<div class="footer__grid">
+					<div class="footer__col">
+						<h4 class="footer__heading">Tech Stack</h4>
+						<ul class="footer__links">
+							<li><a href="#">Back-end</a></li>
+							<li><a href="#">Front-end</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">iOS</a></li>
+							<li><a href="#">Java</a></li>
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">React</a></li>
+							<li><a href="#">Python</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h4 class="footer__heading">Industries We Serve</h4>
+						<ul class="footer__links">
+							<li><a href="#">Financial Services</a></li>
+							<li><a href="#">Healthcare</a></li>
+							<li><a href="#">Logistics</a></li>
+							<li><a href="#">Travel & Hospitality</a></li>
+							<li><a href="#">Automotive</a></li>
+							<li><a href="#">Media & Entertainment</a></li>
+							<li><a href="#">Telecom</a></li>
+							<li><a href="#">Manufacturing</a></li>
+							<li><a href="#">Real Estate</a></li>
+							<li><a href="#">iGaming</a></li>
+							<li><a href="#">Retail</a></li>
+							<li><a href="#">Nonprofit</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h4 class="footer__heading">Our Services</h4>
+						<ul class="footer__links">
+							<li><a href="#">Mobile Development</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Quality Assurance</a></li>
+							<li><a href="#">Staff Augmentation</a></li>
+							<li><a href="#">Project Development Services</a></li>
+							<li><a href="#">Dedicated Team</a></li>
+							<li><a href="#">Engineering</a></li>
+							<li><a href="#">UI/UX Design</a></li>
+							<li><a href="#">DevOps Services</a></li>
+							<li><a href="#">Business Analysis</a></li>
+							<li><a href="#">Solution Architecture</a></li>
+							<li><a href="#">IoT Development Services</a></li>
+							<li><a href="#">Startups & MVP Services</a></li>
+							<li><a href="#">SaaS</a></li>
+							<li><a href="#">Database</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h4 class="footer__heading">Company</h4>
+						<ul class="footer__links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Insights</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">GTC</a></li>
+							<li><a href="#">GTC for Consultancy services</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-content">
+					<div class="footer__logo">
+						<img src="../logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
+					</div>
+					<div class="footer__nav">
+						<a href="#">About Us</a>
+						<a href="#">Services</a>
+						<a href="#">Portfolio</a>
+						<a href="#">Blog</a>
+						<a href="#">Contact Us</a>
+					</div>
+					<div class="footer__social">
+						<a href="#" class="social-link" aria-label="Twitter"></a>
+						<a href="#" class="social-link" aria-label="LinkedIn"></a>
+						<a href="#" class="social-link" aria-label="Pinterest"></a>
+						<a href="#" class="social-link" aria-label="YouTube"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<div class="copyright-links">
+					<span>© 2025 Leanweave. All rights reserved.</span>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+					<a href="#">Cookies Settings</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+	<script src="../script.js"></script>
+	<script src="../js/shared-components.js"></script>
+	<script src="../js/logo-handler.js"></script>
+	<script src="../js/mega-menu.js"></script>
+	<script src="database-development.js"></script>
+</body>
+
+</html>
+
+
+

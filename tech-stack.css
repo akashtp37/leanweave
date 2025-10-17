@@ -93,6 +93,8 @@ button, .btn, .cta-primary, .contact-btn {
     .stack-wrapper {
         grid-template-columns: 1fr;
     }
+    .stack-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .stack-tabs .category-item { margin-bottom: 0; padding: 0.5rem 0.75rem; }
 }
 
 /* Footer spacing harmony for embedded testimonial */

@@ -13,34 +13,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Client feedback slider functionality
-    const track = document.querySelector('.feedback-track');
-    const dots = document.querySelectorAll('.dot');
-    const nextBtn = document.querySelector('.next');
-    const prevBtn = document.querySelector('.prev');
-    
-    if (track && nextBtn && prevBtn && dots.length) {
-        let currentIndex = 0;
-        
-        function updateSlider(index) {
-            track.style.transform = `translateX(-${index * 50}%)`;
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-        }
-        
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % dots.length;
-            updateSlider(currentIndex);
-        });
-        
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + dots.length) % dots.length;
-            updateSlider(currentIndex);
-        });
-        
-        dots.forEach((dot, i) => {
+    // Client feedback navigation functionality (home page style)
+    const dots = document.querySelectorAll('.nav-dots .dot');
+    const arrows = document.querySelectorAll('.nav-arrow');
+
+    if (dots.length && arrows.length) {
+        dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                currentIndex = i;
-                updateSlider(currentIndex);
+                dots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+            });
+        });
+
+        let currentIndex = 0;
+        arrows.forEach((arrow, index) => {
+            arrow.addEventListener('click', () => {
+                if (index === 0) { // Previous
+                    currentIndex = currentIndex > 0 ? currentIndex - 1 : dots.length - 1;
+                } else { // Next
+                    currentIndex = currentIndex < dots.length - 1 ? currentIndex + 1 : 0;
+                }
+                
+                dots.forEach(d => d.classList.remove('active'));
+                dots[currentIndex].classList.add('active');
             });
         });
     }
@@ -172,46 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Auto-scroll functionality for client feedback (optional)
-    function initAutoScroll() {
-        const feedbackSlider = document.querySelector('.client-feedback');
-        
-        if (feedbackSlider) {
-            let autoScrollInterval;
-            
-            function startAutoScroll() {
-                autoScrollInterval = setInterval(() => {
-                    const nextBtn = feedbackSlider.querySelector('.next');
-                    if (nextBtn) {
-                        nextBtn.click();
-                    }
-                }, 4000);
-            }
-            
-            function stopAutoScroll() {
-                clearInterval(autoScrollInterval);
-            }
-            
-            // Start auto-scroll
-            startAutoScroll();
-            
-            // Pause on hover
-            feedbackSlider.addEventListener('mouseenter', stopAutoScroll);
-            feedbackSlider.addEventListener('mouseleave', startAutoScroll);
-            
-            // Stop on button click
-            const buttons = feedbackSlider.querySelectorAll('.slider-btn, .dot');
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    stopAutoScroll();
-                    setTimeout(startAutoScroll, 6000); // Restart after 6 seconds
-                });
-            });
-        }
-    }
-    
-    // Enable auto-scroll
-    initAutoScroll();
+    // Auto-scroll functionality removed - using home page style navigation
 
     // Intersection Observer for animation triggers
     const observerOptions = {

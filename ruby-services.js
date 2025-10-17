@@ -222,33 +222,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize outsourcing tabs
     initOutsourcingTabs();
 
-    // Request quote button functionality
-    function initQuoteButtons() {
-        const quoteButtons = document.querySelectorAll('.request-quote-btn');
-        
-        quoteButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const serviceName = this.closest('.detail-panel').querySelector('h3').textContent;
-                console.log(`Quote requested for: ${serviceName}`);
-                
-                // Add your quote request logic here
-                // For example, open a modal, redirect to contact form, etc.
-                
-                // Optional: Show a success message
-                const originalText = this.textContent;
-                this.textContent = 'Request Sent!';
-                this.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
-                
-                setTimeout(() => {
-                    this.textContent = originalText;
-                    this.style.background = 'linear-gradient(135deg, var(--primary-color), #ff8c00)';
-                }, 2000);
-            });
-        });
-    }
 
     // Initialize quote buttons
-    initQuoteButtons();
 
     // Ruby-themed console messages
     console.log('%c💎 Welcome to Ruby Development Services! 💎', 'color: #cc342d; font-size: 16px; font-weight: bold;');

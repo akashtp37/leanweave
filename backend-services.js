@@ -29,20 +29,37 @@ document.addEventListener('DOMContentLoaded', function() {
     dots.forEach((dot,i)=>dot.addEventListener('click', ()=>{ currentIndex=i; updateSlider(currentIndex); }));
   }
 
-  // Vertical tabs interaction for Back-end scope
+  // Vertical tabs interaction for Back-end scope with enhanced smoothness
   const beTabs = document.querySelectorAll('.be-tab');
   const bePanels = document.querySelectorAll('.be-panel');
   if (beTabs.length && bePanels.length) {
     function activate(id){
+      // Remove active class from all tabs and panels
       beTabs.forEach(t=>t.classList.remove('active'));
       bePanels.forEach(p=>p.classList.remove('active'));
-      const tab = Array.from(beTabs).find(t=>t.getAttribute('data-target')===id);
-      const panel = document.getElementById(id);
-      if (tab) tab.classList.add('active');
-      if (panel) panel.classList.add('active');
+      
+      // Small delay to ensure smooth transition
+      requestAnimationFrame(() => {
+        const tab = Array.from(beTabs).find(t=>t.getAttribute('data-target')===id);
+        const panel = document.getElementById(id);
+        if (tab) tab.classList.add('active');
+        if (panel) panel.classList.add('active');
+      });
     }
+    
     beTabs.forEach(tab=>{
-      tab.addEventListener('click', ()=> activate(tab.getAttribute('data-target')));
+      tab.addEventListener('click', (e)=> {
+        e.preventDefault();
+        activate(tab.getAttribute('data-target'));
+      });
+      
+      // Add keyboard support for accessibility
+      tab.addEventListener('keydown', (e)=> {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activate(tab.getAttribute('data-target'));
+        }
+      });
     });
   }
 });

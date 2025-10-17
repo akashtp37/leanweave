@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,445 @@
     <link rel="stylesheet" href="backend-services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Header Navigation -->
     <header class="main-header">
         <div class="header-container">
             <nav class="main-nav">
-                <a href="leanweve_home_page.html" class="logo">
+                <a href="index.html" class="logo">
                     <img src="logos/leanweave_logo/leanweave_logo.svg" alt="Leanweave Logo">
                 </a>
-                
+
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
                         <a href="tech-stack.html" class="nav-link has-dropdown" data-menu="tech-stack">Tech Stack</a>
+                        <div class="mega-menu" id="techStackMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="frontend">Front-end</a>
+                                    <a href="#" class="category-item" data-category="backend">Back-end</a>
+                                    <a href="#" class="category-item" data-category="mobile">Mobile</a>
+                                </div>
+
+                                <!-- Front-end Technologies -->
+                                <div class="category-content active" id="frontend">
+                                    <div class="content-header">
+                                        <h2>Front-end Development</h2>
+                                        <p>Create stunning user interfaces with modern front-end technologies</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="frontend-services.html" class="tech-card">
+                                            <h3>Front-end Development</h3>
+                                            <p>Leanweave crafts sleek, high-performance interfaces that make your brand
+                                                stand out and your users stay engaged.</p>
+                                        </a>
+                                        <a href="angular-services.html" class="tech-card">
+                                            <h3>Angular</h3>
+                                            <p>Delivering scalable, future-ready web applications with precision and
+                                                adaptability.</p>
+                                        </a>
+                                        <a href="react-services.html" class="tech-card">
+                                            <h3>React</h3>
+                                            <p>Creating fast, dynamic, and resilient front-end solutions tailored to
+                                                your vision.</p>
+                                        </a>
+                                        <a href="vue-services.html" class="tech-card">
+                                            <h3>Vue</h3>
+                                            <p>Building responsive, intuitive, and delightfully smooth user experiences.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Back-end Technologies -->
+                                <div class="category-content" id="backend">
+                                    <div class="content-header">
+                                        <h2>Back-end Development</h2>
+                                        <p>Robust server-side solutions with scalable architectures</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="backend-services.html" class="tech-card">
+                                            <h3>Back-end Development</h3>
+                                            <p>Leanweave's expert engineers design secure, scalable, and
+                                                high-performance systems that power your business from the inside out.
+                                            </p>
+                                        </a>
+                                        <a href="java-services.html" class="tech-card">
+                                            <h3>Java</h3>
+                                            <p>Developing enterprise-grade applications built for stability and
+                                                longevity.</p>
+                                        </a>
+                                        <a href="dotnet-services.html" class="tech-card">
+                                            <h3>.NET</h3>
+                                            <p>Delivering seamless, reliable, and future-ready solutions with .NET
+                                                expertise.</p>
+                                        </a>
+                                        <a href="php-services.html" class="tech-card">
+                                            <h3>PHP</h3>
+                                            <p>Creating dynamic, versatile, and business-focused web applications.</p>
+                                        </a>
+                                        <a href="python-services.html" class="tech-card">
+                                            <h3>Python</h3>
+                                            <p>Driving innovation through Python's adaptability and robust ecosystem.
+                                            </p>
+                                        </a>
+                                        <a href="nodejs-services.html" class="tech-card">
+                                            <h3>Node</h3>
+                                            <p>Building lightning-fast, scalable, and real-time applications with
+                                                Node.js.</p>
+                                        </a>
+                                        <a href="ruby-services.html" class="tech-card">
+                                            <h3>Ruby</h3>
+                                            <p>Crafting elegant, efficient, and maintainable back-end solutions.</p>
+                                        </a>
+                                        <a href="golang-services.html" class="tech-card">
+                                            <h3>Golang</h3>
+                                            <p>Engineering high-performance systems with speed and precision.</p>
+                                        </a>
+                                        <a href="scala-services.html" class="tech-card">
+                                            <h3>Scala</h3>
+                                            <p>Developing scalable, functional, and future-proof applications.</p>
+                                        </a>
+                                        <a href="rust-services.html" class="tech-card">
+                                            <h3>Rust</h3>
+                                            <p>Ensuring unmatched safety, performance, and reliability.</p>
+                                        </a>
+                                        <a href="c-cpp-services.html" class="tech-card">
+                                            <h3>C/C++</h3>
+                                            <p>Delivering powerful, high-efficiency systems with C and C++.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Technologies -->
+                                <div class="category-content" id="mobile">
+                                    <div class="content-header">
+                                        <h2>Mobile Development</h2>
+                                        <p>Native and cross-platform mobile applications for iOS and Android</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="mobileapp-services.html" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Designing native, cross-platform, and progressive apps that deliver
+                                                flawless performance everywhere.</p>
+                                        </a>
+                                        <a href="android-services.html" class="tech-card">
+                                            <h3>Android</h3>
+                                            <p>Crafting seamless, user-focused Android experiences that inspire
+                                                engagement.</p>
+                                        </a>
+                                        <a href="ios-services.html" class="tech-card">
+                                            <h3>iOS</h3>
+                                            <p>Building sleek, high-performance iOS applications with precision and
+                                                style.</p>
+                                        </a>
+                                        <a href="reactnative-services.html" class="tech-card">
+                                            <h3>React Native</h3>
+                                            <p>Creating efficient, cross-platform apps with React Native's power and
+                                                versatility.</p>
+                                        </a>
+                                        <a href="flutter-services.html" class="tech-card">
+                                            <h3>Flutter</h3>
+                                            <p>Transforming app ideas into reality with Flutter's speed, flexibility,
+                                                and elegance.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown" data-menu="services">Services</a>
+                        <div class="mega-menu" id="servicesMenu">
+                            <button class="mega-close" onclick="closeMegaMenu()">×</button>
+                            <div class="mega-container">
+                                <div class="category-nav">
+                                    <a href="#" class="category-item active" data-category="ai-data">AI & Data</a>
+                                    <a href="#" class="category-item" data-category="app-dev">Application Development</a>
+                                    <a href="#" class="category-item" data-category="cloud">Cloud</a>
+                                    <a href="#" class="category-item" data-category="cybersecurity">Cybersecurity</a>
+                                    <a href="#" class="category-item" data-category="engineering">Engineering</a>
+                                    <a href="#" class="category-item" data-category="enterprise-apps">Enterprise Applications</a>
+                                    <a href="#" class="category-item" data-category="staff-augmentation">Staff Augmentation</a>
+                                    <a href="#" class="category-item" data-category="support-services">Support Services</a>
+                                </div>
+
+                                <!-- Services: AI & Data -->
+                                <div class="category-content active" id="ai-data">
+                                    <div class="content-header">
+                                        <h2>AI & Data</h2>
+                                        <p>Unlock intelligence with ML, analytics, and data engineering.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="Services/ai-services.html" class="tech-card">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Design and deploy ML/GenAI solutions that create measurable impact.</p>
+                                        </a>
+                                        <a href="Services/ai-consulting.html" class="tech-card">
+                                            <h3>AI Consulting Services</h3>
+                                            <p>Strategy, roadmaps, and PoCs to accelerate AI adoption safely.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>AI tools for business transformation</h3>
+                                            <p>Automations, copilots, and analytics products tailored to workflows.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Data Science</h3>
+                                            <p>Predictive modeling, experimentation, and decision intelligence.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Database creation and management</h3>
+                                            <p>Schema design, performance tuning, backups, and data governance.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Application Development -->
+                                <div class="category-content" id="app-dev">
+                                    <div class="content-header">
+                                        <h2>Application Development</h2>
+                                        <p>Design, build, and modernize web and mobile applications.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Native iOS/Android and cross-platform apps with intuitive UX.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Web Development</h3>
+                                            <p>Responsive, performant web apps with modern frameworks.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cross-platform development</h3>
+                                            <p>Shared codebases using React Native, Flutter, and more.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>PWA development</h3>
+                                            <p>Installable, offline-ready progressive web applications.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CMS-based web development</h3>
+                                            <p>Headless and traditional CMS solutions for faster delivery.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Cloud -->
+                                <div class="category-content" id="cloud">
+                                    <div class="content-header">
+                                        <h2>Cloud</h2>
+                                        <p>Migrate, optimize, and operate on AWS, Azure, and GCP.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Cloud Development</h3>
+                                            <p>Design and build cloud-native apps using serverless and containers.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cloud Migration</h3>
+                                            <p>Plan and execute secure migrations with minimal downtime.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>AWS</h3>
+                                            <p>Architecture, IaC, and operations on Amazon Web Services.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Cybersecurity -->
+                                <div class="category-content" id="cybersecurity">
+                                    <div class="content-header">
+                                        <h2>Cybersecurity</h2>
+                                        <p>Protect apps and infrastructure with proactive security.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Mobile Development</h3>
+                                            <p>Secure SDLC for mobile apps, code reviews, and hardening.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Web Development</h3>
+                                            <p>OWASP-focused engineering, threat modeling, and secure coding.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Cross-platform development</h3>
+                                            <p>Security baselines across shared codebases and frameworks.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>PWA development</h3>
+                                            <p>Best practices for storage, service workers, and auth flows.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CMS-based web development</h3>
+                                            <p>Hardened CMS setups, least-privilege access, and monitoring.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Engineering -->
+                                <div class="category-content" id="engineering">
+                                    <div class="content-header">
+                                        <h2>Engineering</h2>
+                                        <p>Architecture, performance, and platform engineering services.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Engineering</h3>
+                                            <p>Solution design, architecture reviews, and delivery excellence.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Project Development Services</h3>
+                                            <p>End-to-end implementation with clear milestones and KPIs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Legacy modernization</h3>
+                                            <p>Re-architecture, refactoring, and replatforming with minimal risk.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>DevOps Services</h3>
+                                            <p>CI/CD, observability, SRE practices, and platform automation.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Integration Architecture Audit and Consulting</h3>
+                                            <p>Assess, optimize, and secure integrations across systems.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Custom Software Development</h3>
+                                            <p>Tailored solutions aligned to business outcomes.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">IoT development</h3>
+                                            <p>Device, edge, and cloud solutions with secure connectivity.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">Quality Assurance Services</h3>
+                                            <p>Automation, performance testing, and QA governance.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>API integration</h3>
+                                            <p>Reliable APIs and integrations with robust contracts.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>SaaS</h3>
+                                            <p>Multi-tenant architecture, provisioning, and lifecycle management.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Enterprise Applications -->
+                                <div class="category-content" id="enterprise-apps">
+                                    <div class="content-header">
+                                        <h2>Enterprise Applications</h2>
+                                        <p>ERP, CRM, and integrations tailored for your business.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>SAP</h3>
+                                            <p>Implementation, customization, and integration across SAP modules.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Salesforce</h3>
+                                            <p>Sales, Service, and custom clouds with robust integrations.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>CRM Consulting Services</h3>
+                                            <p>Evaluate, design, and optimize CRM processes and data models.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Creatio CRM Implementation</h3>
+                                            <p>Low-code CRM deployments tailored to your workflows.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Staff Augmentation -->
+                                <div class="category-content" id="staff-augmentation">
+                                    <div class="content-header">
+                                        <h2>Staff Augmentation</h2>
+                                        <p>Scale your team rapidly with vetted engineering talent.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Staff Augmentation</h3>
+                                            <p>Flexible talent to extend your in-house capabilities fast.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Dedicated Team</h3>
+                                            <p>Autonomous squads aligned to outcomes and roadmaps.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>UI/UX Design Services</h3>
+                                            <p>Research, design systems, and prototyping to ship great UX.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Business Analysis</h3>
+                                            <p>Requirements, process mapping, and value-focused backlogs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Solution Architecture</h3>
+                                            <p>Blueprints and governance for scalable, secure systems.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Project Management</h3>
+                                            <p>Agile delivery, risk management, and stakeholder alignment.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Marketing</h3>
+                                            <p>Growth support with product marketing and launch enablement.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Discovery Phase</h3>
+                                            <p>Workshops, scope, and prototypes to de-risk delivery.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Startups and MVPs</h3>
+                                            <p>Lean builds from idea to traction with fast iterations.</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Services: Support Services -->
+                                <div class="category-content" id="support-services">
+                                    <div class="content-header">
+                                        <h2>Support Services</h2>
+                                        <p>24/7 maintenance, SRE, and L1–L3 production support.</p>
+                                    </div>
+                                    <div class="content-grid">
+                                        <a href="#" class="tech-card">
+                                            <h3>Maintenance and Support Services</h3>
+                                            <p>Continuous improvements, bug fixes, and stability enhancements.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>IT Help Desk Services</h3>
+                                            <p>Multi-level support with clear SLAs and rapid resolution.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3 class="highlight-underline">Salesforce Support Services</h3>
+                                            <p>Admin, enhancements, and user support for Salesforce orgs.</p>
+                                        </a>
+                                        <a href="#" class="tech-card">
+                                            <h3>Atlassian Support Services</h3>
+                                            <p>Jira/Confluence admin, workflows, and performance tuning.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="#" class="nav-link">Industries</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Insights</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
                 </ul>
-                
+
                 <div class="mobile-toggle" id="mobileToggle">
                     <span></span>
                     <span></span>
@@ -54,7 +471,7 @@
                         that power modern applications and integrate seamlessly with your ecosystem.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn--secondary">Get Started</a>
+                        <a href="#contact" class="btn btn--primary">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -78,21 +495,24 @@
             </div>
         </section>
 
-         <!-- Leanweave Back-end Development Capabilities and Scope Section -->
+        <!-- Leanweave Back-end Development Capabilities and Scope Section -->
         <section id="capabilities" class="capabilities-section">
             <div class="container">
                 <div class="capabilities-header">
                     <h2>Leanweave Back-end Development Capabilities and Scope</h2>
-                    <p>Enterprise-grade APIs, microservices, integrations, and data processing pipelines built with the right technology for the job.</p>
+                    <p>Enterprise-grade APIs, microservices, integrations, and data processing pipelines built with the
+                        right technology for the job.</p>
                 </div>
-                
+
                 <div class="capabilities-content">
                     <div class="panel-layout">
                         <div class="panel-left">
                             <div class="framework-content">
                                 <h3>High-level Back-end Development</h3>
-                                <p>Leanweave's Back-end Development experts will help you build properly functioning, secure, and reliable solutions to ensure seamless and flawless data flows by using the best matching languages and frameworks.</p>
-                                
+                                <p>Leanweave's Back-end Development experts will help you build properly functioning,
+                                    secure, and reliable solutions to ensure seamless and flawless data flows by using
+                                    the best matching languages and frameworks.</p>
+
                                 <h4>Key Capabilities</h4>
                                 <ul class="benefits-list">
                                     <li>Distributed systems, environments, and microservices</li>
@@ -102,64 +522,73 @@
                                     <li>IoT software engineering</li>
                                     <li>Migration from legacy software</li>
                                 </ul>
-                                
-                                <button class="request-services-btn">Request Services</button>
+
+
                             </div>
                         </div>
-                        
+
                         <div class="panel-right">
                             <div class="tech-logos-grid">
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                                            alt=".NET">
                                     </div>
                                     <span>.NET</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                            alt="C++">
                                     </div>
                                     <span>C++</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+                                            alt="Go">
                                     </div>
                                     <span>Go</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                            alt="Java">
                                     </div>
                                     <span>Java</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                            alt="Node">
                                     </div>
                                     <span>Node</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                            alt="PHP">
                                     </div>
                                     <span>PHP</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                            alt="Python">
                                     </div>
                                     <span>Python</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" alt="Scala">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg"
+                                            alt="Scala">
                                     </div>
                                     <span>Scala</span>
                                 </div>
                                 <div class="tech-logo">
                                     <div class="logo-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
+                                            alt="Ruby">
                                     </div>
                                     <span>Ruby</span>
                                 </div>
@@ -176,12 +605,14 @@
             <div class="container">
                 <div class="scope-header">
                     <h2>Leanweave Back-end Development Scope</h2>
-                    <p>Enterprise-grade APIs, microservices, integrations, and data processing pipelines built with the right technology for the job.</p>
+                    <p>Enterprise-grade APIs, microservices, integrations, and data processing pipelines built with the
+                        right technology for the job.</p>
                 </div>
 
                 <div class="be-scope">
                     <aside class="be-tabs" role="tablist">
-                        <button class="be-tab active" data-target="be-java" role="tab" aria-selected="true">Java</button>
+                        <button class="be-tab active" data-target="be-java" role="tab"
+                            aria-selected="true">Java</button>
                         <button class="be-tab" data-target="be-dotnet" role="tab" aria-selected="false">.NET</button>
                         <button class="be-tab" data-target="be-php" role="tab" aria-selected="false">PHP</button>
                         <button class="be-tab" data-target="be-python" role="tab" aria-selected="false">Python</button>
@@ -197,46 +628,50 @@
                     <div class="be-content">
                         <article class="be-panel active" id="be-java" role="tabpanel">
                             <h3>Java development</h3>
-                            <p>Build scalable, enterprise-grade back-ends with Spring Boot and modern JVM tooling. Strong typing and an extensive ecosystem enable long-term reliability.</p>
+                            <p>Build scalable, enterprise-grade back-ends with Spring Boot and modern JVM tooling.
+                                Strong typing and an extensive ecosystem enable long-term reliability.</p>
                             <ul class="be-checks">
                                 <li>Custom Java microservices and APIs</li>
                                 <li>Modernization of legacy Java platforms</li>
                                 <li>High-load, resilient architectures</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-dotnet" role="tabpanel">
                             <h3>.NET development</h3>
-                            <p>Cross-platform services with .NET and C# for fast delivery and first-class Azure integrations.</p>
+                            <p>Cross-platform services with .NET and C# for fast delivery and first-class Azure
+                                integrations.</p>
                             <ul class="be-checks">
                                 <li>ASP.NET Core REST/GraphQL APIs</li>
                                 <li>Cloud-native, containerized delivery</li>
                                 <li>Secure identity and access</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-php" role="tabpanel">
                             <h3>PHP development</h3>
-                            <p>Rapid web platforms using Laravel/Symfony, with clean architecture and maintainable code.</p>
+                            <p>Rapid web platforms using Laravel/Symfony, with clean architecture and maintainable code.
+                            </p>
                             <ul class="be-checks">
                                 <li>Headless back-ends for CMS/ecommerce</li>
                                 <li>API-first applications</li>
                                 <li>Performance and security hardening</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-python" role="tabpanel">
                             <h3>Python development</h3>
-                            <p>Reliable services with Django/FastAPI for data workflows, ML integration, and automation.</p>
+                            <p>Reliable services with Django/FastAPI for data workflows, ML integration, and automation.
+                            </p>
                             <ul class="be-checks">
                                 <li>Data pipelines and workers</li>
                                 <li>Async services with FastAPI</li>
                                 <li>Integration with scientific stack</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-ruby" role="tabpanel">
@@ -247,7 +682,7 @@
                                 <li>Multi-tenant SaaS foundations</li>
                                 <li>Observability and performance</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-rust" role="tabpanel">
@@ -258,7 +693,7 @@
                                 <li>CPU-bound processing</li>
                                 <li>WASM and systems integration</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-node" role="tabpanel">
@@ -269,7 +704,7 @@
                                 <li>Real-time messaging (WebSocket)</li>
                                 <li>Serverless and edge functions</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-scala" role="tabpanel">
@@ -280,7 +715,7 @@
                                 <li>Stream processing</li>
                                 <li>Type-safe domain modeling</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-go" role="tabpanel">
@@ -291,7 +726,7 @@
                                 <li>DevOps/platform tools</li>
                                 <li>Cloud-native workloads</li>
                             </ul>
-                            <a href="#contact" class="see-more">See more</a>
+
                         </article>
 
                         <article class="be-panel" id="be-cpp" role="tabpanel">
@@ -309,7 +744,7 @@
             </div>
         </section>
 
-       
+
         <!-- Client Feedback Section -->
         <section class="client-feedback">
             <div class="feedback-container">
@@ -321,13 +756,29 @@
                 <div class="testimonials-grid">
                     <div class="testimonial">
                         <div class="stars">
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
                         </div>
-                        <p class="testimonial-text">"The backend architecture has been rock solid. Excellent execution!"</p>
+                        <p class="testimonial-text">"The backend architecture has been rock solid. Excellent execution!"
+                        </p>
                         <div class="client-info">
                             <div class="client-avatar">AJ</div>
                             <div class="client-details">
@@ -335,20 +786,37 @@
                                 <div class="client-title">Project Manager, TechCorp</div>
                             </div>
                             <div class="company-logo">
-                                <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg" alt="Matha Hospital">
+                                <img class="company-logo" src="images/testimonial 1/logo/Matha_Hospital.svg"
+                                    alt="Matha Hospital">
                             </div>
                         </div>
                     </div>
 
                     <div class="testimonial">
                         <div class="stars">
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                            <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
                         </div>
-                        <p class="testimonial-text">"Great performance improvements and smooth integrations across systems.”</p>
+                        <p class="testimonial-text">"Great performance improvements and smooth integrations across
+                            systems.”</p>
                         <div class="client-info">
                             <div class="client-avatar">MS</div>
                             <div class="client-details">
@@ -361,7 +829,7 @@
                         </div>
                     </div>
 
-                    <div class="testimonial">
+                    <!-- <div class="testimonial">
                         <div class="stars">
                             <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -401,7 +869,7 @@
                                 <img class="company-logo" src="images/testimonial 1/logo/futuretech.svg" alt="FutureTech">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="navigation">
@@ -412,10 +880,16 @@
                     </div>
                     <div class="nav-arrows">
                         <div class="nav-arrow">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
                         </div>
                         <div class="nav-arrow">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -509,7 +983,7 @@
                     <div class="footer__logo">
                         <img src="logos/leanweave_logo/leanweave_logo_white.svg" alt="Leanweave Logo">
                     </div>
-                    
+
                     <div class="footer__nav">
                         <a href="#">About Us</a>
                         <a href="#">Services</a>
@@ -520,16 +994,28 @@
 
                     <div class="footer__social">
                         <a href="#" class="social-link" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
                         </a>
                         <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.414v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.414v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
                         </a>
                         <a href="#" class="social-link" aria-label="Pinterest">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z" />
+                            </svg>
                         </a>
                         <a href="#" class="social-link" aria-label="YouTube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.495.69 9.376.69 9.376.69s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.495.69 9.376.69 9.376.69s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -545,14 +1031,16 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="js/mega-menu.js"></script>
     <script src="backend-services.js"></script>
     <script src="hero-animation.js"></script>
     <script>
-        (function(){
+        (function () {
             const dots = document.querySelectorAll('.nav-dots .dot');
             const arrows = document.querySelectorAll('.nav-arrows .nav-arrow');
-            if(!dots.length || !arrows.length) return;
+            if (!dots.length || !arrows.length) return;
             dots.forEach((dot) => {
                 dot.addEventListener('click', () => {
                     dots.forEach(d => d.classList.remove('active'));
@@ -574,6 +1062,5 @@
         })();
     </script>
 </body>
+
 </html>
-
-

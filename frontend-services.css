@@ -200,73 +200,30 @@ button, .btn, .cta-primary, .contact-btn {
 
 .scope-tabs { 
 	display: flex; 
-	justify-content: flex-start; 
-	gap: 1rem; 
-	margin-bottom: 3rem; 
+	justify-content: center; 
 	flex-wrap: wrap;
-	position: relative;
+	gap: 1rem; 
+	margin-bottom: 3rem;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 1rem;
 }
-.scope-tabs::after {
-	content: '';
-	position: absolute;
-	bottom: -10px;
-	left: 0;
-	right: 0;
-	height: 1px;
-	background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
-}
+
 .scope-tab {
-	background: var(--light-color);
-	padding: 1rem 2rem;
-	border-radius: 999px;
-	border: 2px solid #e0e0e0;
+	background: none;
+	border: none;
+	padding: 12px 24px;
 	font-family: 'Inter', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
+	color: var(--text-light);
 	cursor: pointer;
+	border-radius: 6px;
 	transition: all 0.3s ease;
-	font-size: 0.9rem;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	position: relative;
-	overflow: hidden;
 }
-.scope-tab::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-	transition: left 0.5s ease;
-}
-.scope-tab:hover::before {
-	left: 100%;
-}
-.scope-tab:hover { 
-	border-color: var(--primary-color); 
-	color: var(--primary-color); 
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(255, 107, 53, 0.15);
-}
-.scope-tab.active { 
-	background: linear-gradient(135deg, var(--primary-color), #ff8c00); 
-	color: var(--light-color); 
-	border-color: var(--primary-color); 
-	position: relative;
-	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(255, 107, 53, 0.25);
-}
-.scope-tab.active::after {
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 80%;
-	height: 3px;
-	background: #ffd700;
-	border-radius: 2px;
+
+.scope-tab.active,
+.scope-tab:hover {
+	color: var(--primary-color);
+	background: rgba(255, 107, 53, 0.1);
 }
 
 .scope-content { max-width: 1200px; margin: 0 auto; }
@@ -279,7 +236,7 @@ button, .btn, .cta-primary, .contact-btn {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
-	align-items: start;
+	align-items: stretch;
 	position: relative;
 }
 
@@ -430,13 +387,16 @@ button, .btn, .cta-primary, .contact-btn {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.5rem;
 	width: 100%;
-	max-width: 400px;
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 16px;
-	padding: 1.5rem;
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	height: 100%;
+	padding: 0.5rem;
+	overflow-y: auto;
+	overscroll-behavior: contain;
 }
+
+/* Optional scrollbar refinement */
+.tech-logos-grid::-webkit-scrollbar { width: 8px; }
+.tech-logos-grid::-webkit-scrollbar-thumb { background: #e0e0e0; border-radius: 8px; }
+.tech-logos-grid:hover::-webkit-scrollbar-thumb { background: #cfcfcf; }
 
 .tech-logo {
 	display: flex;
@@ -545,10 +505,9 @@ button, .btn, .cta-primary, .contact-btn {
 		display: none;
 	}
 	.tech-logos-grid {
-		max-width: 100%;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 	.scope-header h2 {
 		font-family: 'Cabin', sans-serif;
@@ -566,7 +525,7 @@ button, .btn, .cta-primary, .contact-btn {
 	.tech-logos-grid {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 0.75rem;
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 	.logo-icon {
 		width: 50px;

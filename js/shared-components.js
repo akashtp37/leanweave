@@ -216,22 +216,46 @@ window.LeanWeaveUtils = {
      * Request Services Button Handlers
      */
     initServiceButtons: function() {
-        const requestButtons = document.querySelectorAll('.request-services-btn, .service-btn');
+        const requestButtons = document.querySelectorAll('.request-services-btn, .service-btn, .cta-primary, .btn--primary, .btn--secondary');
+        
+        console.log('Shared components: Found service buttons:', requestButtons.length);
+        
         requestButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Add click animation
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 150);
-                
-                // Scroll to contact section if it exists
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
+            // Remove any existing listeners to prevent duplicates
+            button.removeEventListener('click', this.handleServiceButtonClick);
+            
+            // Add new listener
+            button.addEventListener('click', this.handleServiceButtonClick.bind(this));
         });
+    },
+
+    /**
+     * Handle service button clicks
+     */
+    handleServiceButtonClick: function(e) {
+        e.preventDefault();
+        
+        console.log('Service button clicked:', this.textContent.trim());
+        
+        // Add click animation
+        this.style.transform = 'scale(0.95)';
+        this.style.transition = 'transform 0.15s ease';
+        
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+        }, 150);
+        
+        // Scroll to contact section if it exists
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            // Fallback: scroll to footer CTA
+            const footerCTA = document.querySelector('.footer__cta');
+            if (footerCTA) {
+                footerCTA.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     },
 
     /**
