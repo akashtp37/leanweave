@@ -2,19 +2,12 @@
 
 /* Scoped styles for Database Development page */
 
-/* Override theme variables locally to align with DB page (blue/teal palette) */
-body {
-	--primary-color: #0ea5e9; /* sky-500 */
-	--secondary-color: #14b8a6; /* teal-500 */
-	--hover-bg: rgba(14, 165, 233, 0.08);
-}
-
 .hero-section {
 	min-height: 60vh;
 	background:
-		radial-gradient(ellipse at top left, #0052cc 0%, transparent 60%),
-		radial-gradient(ellipse at bottom right, #00b8d9 0%, transparent 60%),
-		linear-gradient(135deg, #0f172a 0%, #0b1020 50%, #0f172a 100%);
+		radial-gradient(ellipse at top left, #ff4500 0%, transparent 60%),
+		radial-gradient(ellipse at bottom right, #ff8c00 0%, transparent 60%),
+		linear-gradient(135deg, #1a1a1a 0%, #2d1b0e 50%, #1a1a1a 100%);
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -24,18 +17,18 @@ body {
 }
 
 .hero-title .word:nth-child(2) {
-	background: linear-gradient(45deg, #00b8d9, #14b8a6, #38bdf8);
+	background: linear-gradient(45deg, #ff6b35, #ff8c00, #ffa500);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
 
-.statistics-grid { background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%), radial-gradient(circle at 20% 80%, rgba(0, 82, 204, .08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(20, 184, 166, .08) 0%, transparent 50%); }
+.statistics-grid { background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%), radial-gradient(circle at 20% 80%, rgba(255, 107, 53, .08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 140, 0, .08) 0%, transparent 50%); }
 
-.services-header h2::after { background: linear-gradient(90deg, #00b8d9, #14b8a6); }
+.services-header h2::after { background: linear-gradient(90deg, #ff6b35, #ff8c00); }
 
 /* Tech icons tint for DB page */
-.tech-icon { background: #0ea5e9; }
+.tech-icon { background: var(--primary-color); }
 
 @media (max-width: 968px) {
 	.hero-section { min-height: 70vh; padding: 80px 2rem 2rem 2rem; }
@@ -112,7 +105,7 @@ body {
 .stat-label { font-family: 'Inter', sans-serif; color: #000; font-size: 1rem; font-weight: 500; }
 
 .lw-process-section {
-	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%), radial-gradient(circle at 20% 80%, rgba(0, 82, 204, .05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(20, 184, 166, .05) 0%, transparent 50%);
+	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%), radial-gradient(circle at 20% 80%, rgba(255, 107, 53, .05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 140, 0, .05) 0%, transparent 50%);
 	padding: 8rem 2rem;
 	position: relative;
 	overflow: hidden;
@@ -123,7 +116,7 @@ body {
 	position: absolute;
 	top: 0; left: 0; right: 0;
 	height: 3px;
-	background: linear-gradient(90deg, transparent, #00b8d9, #14b8a6, transparent);
+	background: linear-gradient(90deg, transparent, #ff6b35, #ff8c00, transparent);
 }
 
 .lw-process-section::after {
@@ -131,7 +124,7 @@ body {
 	position: absolute;
 	bottom: 0; left: 0; right: 0;
 	height: 1px;
-	background: linear-gradient(90deg, transparent, rgba(0, 184, 217, 0.2), transparent);
+	background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.2), transparent);
 }
 
 .process-grid {
@@ -160,7 +153,7 @@ body {
 	position: absolute;
 	top: 0; left: 0; right: 0;
 	height: 3px;
-	background: linear-gradient(90deg, #00b8d9, #14b8a6);
+	background: linear-gradient(90deg, #ff6b35, #ff8c00);
 	opacity: 0;
 	transition: opacity .3s ease;
 }
@@ -180,7 +173,7 @@ body {
 
 .services-header { text-align: center; margin-bottom: 3rem; position: relative; padding-bottom: 1rem; }
 .services-header h2 { font-family: 'Cabin', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--text-color); margin-bottom: 1rem; position: relative; }
-.services-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: linear-gradient(90deg, #00b8d9, #14b8a6); border-radius: 2px; }
+.services-header h2::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: linear-gradient(90deg, #ff6b35, #ff8c00); border-radius: 2px; }
 .services-header p { font-family: 'Inter', sans-serif; max-width: 800px; margin: 0 auto; color: #666; line-height: 1.6; }
 
 @media (max-width: 968px) {

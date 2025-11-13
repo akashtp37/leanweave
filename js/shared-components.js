@@ -268,45 +268,131 @@ window.LeanWeaveUtils = {
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const target = entry.target;
-                    const finalNumber = target.textContent;
-                    const numericValue = parseInt(finalNumber.replace(/\D/g, ''));
-                    const hasPlus = finalNumber.includes('+');
-                    
-                    if (numericValue) {
-                        this.animateNumber(target, 0, numericValue, hasPlus);
+                if (!entry.isIntersecting) return;
+
+                const target = entry.target;
+                const dataset = target.dataset || {};
+                const originalText = (target.textContent || '').trim();
+                const valueAttr = dataset.value;
+                let numericValue = null;
+
+                if (valueAttr !== undefined) {
+                    const parsed = parseFloat(valueAttr);
+                    numericValue = Number.isNaN(parsed) ? null : parsed;
+                } else {
+                    const numericMatches = originalText.match(/[\d.,]+/g);
+                    if (numericMatches && numericMatches.length) {
+                        const lastMatch = numericMatches[numericMatches.length - 1].replace(/,/g, '');
+                        const parsed = parseFloat(lastMatch);
+                        numericValue = Number.isNaN(parsed) ? null : parsed;
                     }
-                    
-                    observer.unobserve(target);
                 }
+
+                if (numericValue === null) {
+                    observer.unobserve(target);
+                    return;
+                }
+
+                const decimals = dataset.decimals
+                    ? Math.max(parseInt(dataset.decimals, 10) || 0, 0)
+                    : valueAttr && valueAttr.includes('.')
+                        ? valueAttr.split('.').pop().length
+                        : 0;
+
+                const prefix = dataset.prefix || '';
+                let suffix;
+
+                if (dataset.suffix !== undefined) {
+                    suffix = dataset.suffix;
+                } else {
+                    suffix = originalText.replace(/[\d.,\s]/g, '');
+                }
+
+                const finalText = dataset.final || null;
+                const duration = dataset.duration ? Math.max(parseInt(dataset.duration, 10) || 2000, 200) : 2000;
+                const startValue = dataset.start ? parseFloat(dataset.start) : 0;
+
+                this.animateNumber(target, {
+                    start: Number.isNaN(startValue) ? 0 : startValue,
+                    end: numericValue,
+                    decimals,
+                    prefix,
+                    suffix,
+                    duration,
+                    finalText
+                });
+
+                observer.unobserve(target);
             });
         }, { threshold: 0.5 });
 
-        statNumbers.forEach(stat => {
-            observer.observe(stat);
-        });
+        statNumbers.forEach(stat => observer.observe(stat));
     },
 
     /**
      * Animate Number Utility
      */
-    animateNumber: function(element, start, end, hasPlus = false) {
-        const duration = 2000;
+    animateNumber: function(element, options, legacyEnd, legacyHasPlus = false) {
+        let settings;
+
+        if (typeof options === 'object' && options !== null) {
+            const defaults = {
+                start: 0,
+                end: 0,
+                decimals: 0,
+                prefix: '',
+                suffix: '',
+                duration: 2000,
+                finalText: null
+            };
+
+            settings = Object.assign({}, defaults, options);
+        } else {
+            settings = {
+                start: Number(options) || 0,
+                end: Number(legacyEnd) || 0,
+                decimals: 0,
+                prefix: '',
+                suffix: legacyHasPlus ? '+' : '',
+                duration: 2000,
+                finalText: null
+            };
+        }
+
+        const {
+            start,
+            end,
+            decimals,
+            prefix,
+            suffix,
+            duration,
+            finalText
+        } = settings;
+
         const startTime = performance.now();
-        
+        const decimalPlaces = Number.isInteger(decimals) ? Math.max(decimals, 0) : 0;
+
+        const formatValue = (value) => {
+            const rounded = decimalPlaces > 0
+                ? value.toFixed(decimalPlaces)
+                : Math.round(value).toString();
+            return `${prefix}${rounded}${suffix}`;
+        };
+
         function update(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            
-            const current = Math.floor(start + (end - start) * progress);
-            element.textContent = current + (hasPlus ? '+' : '');
-            
+            const currentValue = start + (end - start) * progress;
+
+            element.textContent = formatValue(currentValue);
+
             if (progress < 1) {
                 requestAnimationFrame(update);
+            } else if (finalText) {
+                element.textContent = finalText;
             }
         }
-        
+
         requestAnimationFrame(update);
     },
 
