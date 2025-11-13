@@ -1,0 +1,24 @@
+@import url('../style.css');
+
+/* Scoped styles for CMS-Based Web Development page */
+
+.hero-section {
+    min-height: 60vh;
+    background:
+        radial-gradient(ellipse at top left, #007bff 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, #0056b3 0%, transparent 60%),
+        linear-gradient(135deg, #1a1a1a 0%, #1a1a2a 50%, #1a1a1a 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 5% 0 5%;
+    overflow: hidden;
+}
+
+.hero-title .word:nth-child(2) {
+    background: linear-gradient(45deg, #007bff, #0056b3, #003f80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
