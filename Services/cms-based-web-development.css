@@ -267,125 +267,150 @@
     margin-bottom: 1.5rem;
 }
 
-/* Tech Stack Section */
-.techset {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%),
-                radial-gradient(circle at 20% 80%, rgba(255, 107, 53, .05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 140, 0, .05) 0%, transparent 50%);
-    padding: 8rem 2rem;
+/* Benefits Section */
+.benefits-section,
+.why-partner-section,
+.implementation-steps-section,
+.additional-services-section {
+    background:
+        linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%),
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
+    padding: 6rem 2rem;
     position: relative;
-    overflow: hidden;
 }
 
-.techset::before {
+.benefits-section::before,
+.why-partner-section::before,
+.implementation-steps-section::before,
+.additional-services-section::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #ff6b35, #ff8c00, transparent);
+    background: linear-gradient(90deg, transparent, var(--primary-color), #ff8c00, transparent);
+    opacity: 0.6;
 }
 
-.techset__header {
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.techset__header h2 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.techset__header h2::after {
+.benefits-section::after,
+.why-partner-section::after,
+.implementation-steps-section::after,
+.additional-services-section::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, #ff6b35, #ff8c00);
-    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.15), transparent);
 }
 
-.techset__header p {
-    font-family: 'Inter', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #666;
-    line-height: 1.6;
-}
-
-.tech-grid {
+.benefits-grid,
+.why-partner-grid,
+.additional-services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
-.tech-item {
-    background: #fff;
+.benefit-card,
+.partner-card {
+    background: #ffffff;
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, .06);
-    transition: all .3s ease;
-    text-align: center;
+    border-radius: 14px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 20px rgba(17, 24, 39, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.tech-item::before {
+.benefit-card::before,
+.partner-card::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #ff6b35, #ff8c00);
+    background: linear-gradient(90deg, var(--primary-color), #ff8c00);
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
-.tech-item:hover {
+.benefit-card:hover,
+.partner-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, .12);
+    box-shadow: 0 18px 40px rgba(17, 24, 39, 0.12);
     border-color: var(--primary-color);
 }
 
-.tech-item:hover::before {
+.benefit-card:hover::before,
+.partner-card:hover::before {
     opacity: 1;
 }
 
-.tech-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.benefit-card h3,
+.partner-card h3 {
     font-family: 'Cabin', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-    margin: 0 auto 1rem;
-    background: var(--primary-color);
-}
-
-.tech-item h3 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
-.tech-item p {
+.benefit-card p,
+.partner-card p {
     font-family: 'Inter', sans-serif;
-    color: #555;
-    line-height: 1.6;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.implementation-steps-section {
+    background:
+        linear-gradient(135deg, #ffffff 0%, #f9fafb 100%),
+        radial-gradient(circle at 15% 85%, rgba(255, 107, 53, 0.04) 0%, transparent 55%),
+        radial-gradient(circle at 85% 20%, rgba(255, 140, 0, 0.04) 0%, transparent 55%);
+}
+
+.steps-grid {
+    counter-reset: cms-steps;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    padding: 1.75rem;
+    box-shadow: 0 4px 20px rgba(17, 24, 39, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(17, 24, 39, 0.12);
+    border-color: var(--primary-color);
+}
+
+.step-card h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.step-card p {
+    font-family: 'Inter', sans-serif;
+    color: #4b5563;
+    line-height: 1.7;
 }
 
 /* Statistics Section Styles */
@@ -478,45 +503,6 @@
     align-items: center;
 }
 
-/* Techset Tabs Styles */
-.techset__tabs {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.techset__tab {
-    background: none;
-    border: none;
-    padding: 1rem 2rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #666;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-}
-
-.techset__tab.active {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
-    font-weight: 600;
-}
-
-.techset__tab:hover {
-    color: var(--primary-color);
-}
-
-.techset__panel {
-    display: none;
-}
-
-.techset__panel.active {
-    display: block;
-}
 
 /* Responsive Design */
 @media (max-width: 968px) {
@@ -575,14 +561,356 @@
         max-width: 100%;
     }
 
-    .techset__tabs {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .statistics-grid {
         flex-direction: column;
         gap: 2rem;
         padding: 3rem 2rem;
+    }
+}
+
+/* React Services Section */
+.react-services-section {
+    background:
+        linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%),
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 0, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.03) 0%, transparent 50%);
+    padding: 8rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.react-services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), #ff8c00, transparent);
+}
+
+.react-services-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.2), transparent);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: var(--light-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), #ff8c00);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.service-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), #ff8c00);
+    border-radius: 1px;
+}
+
+.service-card p {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.service-features li {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+
+.service-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Client Feedback Section */
+.client-feedback {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-header {
+    margin-bottom: 60px;
+}
+
+.feedback-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.feedback-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    color: #ffd700;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 32px;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.client-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), #ff8c00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.client-details {
+    flex: 1;
+}
+
+.client-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 4px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.client-title {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Inter', sans-serif;
+}
+
+.company-logo {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+    font-family: 'Cabin', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.nav-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--text-color);
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-arrow {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.nav-arrow:hover {
+    border-color: var(--text-color);
+    background-color: var(--text-color);
+    color: white;
+}
+
+.nav-arrow svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .services-header h2 {
+        font-size: 2rem;
+    }
+
+    .react-services-section {
+        padding: 4rem 1rem;
+    }
+
+    .services-header h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feedback-title {
+        font-size: 2rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .testimonial {
+        padding: 30px;
+    }
+
+    .benefits-section,
+    .why-partner-section,
+    .implementation-steps-section,
+    .additional-services-section {
+        padding: 4rem 1rem;
+    }
+
+    .benefits-grid,
+    .why-partner-grid,
+    .additional-services-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
